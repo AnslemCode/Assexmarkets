@@ -43,7 +43,7 @@ const ContactUsForm = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="bg-white rounded-2xl shadow-xl p-10 sm:p-12 space-y-10"
+          className="bg-white rounded-2xl shadow-xl p-10 sm:p-12 space-y-10 border border-stone-100"
         >
           <div className="text-center">
             <h2 className="text-xl font-bold text-[#1f0d3f]">Contact Us</h2>

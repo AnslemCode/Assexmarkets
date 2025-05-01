@@ -88,7 +88,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
           </motion.p>
 
           <motion.div
-            className="mt-10 flex flex-wrap justify-center md:justify-start gap-4"
+            className="mt-10 flex md:flex-row justify-center md:justify-start gap-4"
             variants={textVariant}
             initial="hidden"
             whileInView="visible"

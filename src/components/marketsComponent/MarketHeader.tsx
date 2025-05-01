@@ -26,7 +26,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
   imageElement,
 }) => {
   return (
-    <section className="bg-[rgba(0,204,177,0.02)] px-26 py-24">
+    <section className="bg-[rgba(0,204,177,0.02)] px-4 sm:px-8 lg:px-26 py-20 lg:py-24 min-h-[553px]">
       <div
         className={`mx-auto flex flex-col-reverse lg:flex-row ${
           reverse ? "lg:flex-row-reverse" : ""
@@ -34,7 +34,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
       >
         {/* Left Content */}
         <div className="w-full max-w-[747px]">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#1F0d3f] leading-[140%]">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#1F0d3f] leading-tight">
             {title}
           </h2>
 
@@ -45,9 +45,11 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
           )}
 
           {bulletPoints && (
-            <ul className="max-w-[709px] list-disc list-inside text-lg  mt-8 space-y-2">
+            <ul className="max-w-[709px] list-disc list-inside text-lg mt-4 pl-5 space-y-2 leading-relaxed">
               {bulletPoints.map((point, index) => (
-                <li key={index}>{point}</li>
+                <li key={index} className="ml-1">
+                  {point}
+                </li>
               ))}
             </ul>
           )}

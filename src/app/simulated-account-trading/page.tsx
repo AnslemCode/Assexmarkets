@@ -1,3 +1,4 @@
+import Image from "next/image";
 import TradingPagesHeading from "@/components/pageComponents/TradingPagesHeading";
 import ReusableBenefitsSection from "@/sections/TradingPagesSection/SimulatedBenefits";
 import SimulatedResponsiveSection from "@/sections/TradingPagesSection/SimulatedResponsiveSection";
@@ -55,7 +56,15 @@ const SimulatedAccountTradingPage = () => {
       <ReusableBenefitsSection
         title="Benefits of using an Assexmarkets Simulated Trading Account"
         benefits={benefitsData}
-        // cards={accountCards}
+        rightContent={
+          <Image
+            src="/images/TradingAccount.png"
+            alt="Live Account Image"
+            width={600}
+            height={505}
+            className=""
+          />
+        }
       />
       <SimulatedResponsiveSection />
       <TradingPageCTA isSimulatedPage />

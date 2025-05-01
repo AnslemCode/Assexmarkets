@@ -26,7 +26,7 @@ const CopyTradingAccountTypes = () => {
   //   const router = useRouter();
   return (
     <section className="mt-20">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
           className="flex flex-col items-center text-center gap-6 px-4"
@@ -76,6 +76,7 @@ const CopyTradingAccountTypes = () => {
                       variant="primary"
                       text="Become a Follower"
                       icon={<WhiteFlameButtonIcon />}
+                      size="lg"
                       onClick={() => console.log("Custom button clicked")}
                     />
                   }
@@ -99,8 +100,8 @@ const CopyTradingAccountTypes = () => {
                       variant="primary"
                       text="Become a Strategy Provider"
                       icon={<WhiteFlameButtonIcon />}
+                      size="lg"
                       onClick={() => console.log("Custom button clicked")}
-                      // className="w-full bg-yellow-300 text-black hover:bg-yellow-400"
                     />
                   }
                 />

@@ -7,7 +7,7 @@ import BenefitCardV2 from "@/components/pageComponents/BenefitCardV2";
 const CryptoWhyAssexMarket = () => {
   return (
     <section className="my-30">
-      <div className="max-w-6xl mx-auto flex flex-col items-center px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="Why Assexmarkets?" />
         <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">
           Why trade crypto with Assexmarkets

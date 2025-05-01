@@ -3,7 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
-import MenuContextProvider from "@/contexta/MobileMenuContext";
+import { MenuContextProvider } from "@/context/MobileMenuContext";
 
 const interFont = Inter({
   subsets: ["latin"],

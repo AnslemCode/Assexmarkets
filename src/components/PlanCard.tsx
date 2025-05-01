@@ -24,7 +24,7 @@ export const PlanCard: React.FC<PlanCardProps> = ({
   return (
     <div
       className={clsx(
-        "relative w-full max-w-[360px] sm:max-w-none sm:flex-1 rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ease-in-out",
+        "relative w-[352px] rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ease-in-out",
         "bg-white shadow-lg hover:bg-[#F3FFFD] hover:shadow-xl hover:border-[#00CCB1] hover:border-2",
         isPro &&
           "border-2 border-[#00CCB1] shadow-[0_0_60px_0_rgba(0,204,177,0.3)]"
@@ -53,7 +53,7 @@ export const PlanCard: React.FC<PlanCardProps> = ({
               variant="primary"
               text="Register"
               icon={WhiteFlameButtonIcon()}
-              className="w-full max-w-[280px]"
+              size="lg"
             />
           )}
         </div>

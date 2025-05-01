@@ -1,6 +1,7 @@
 import TradingPagesHeading from "@/components/pageComponents/TradingPagesHeading";
 import FAQs, { FAQItem } from "@/sections/FAQs";
 import CommoditiesTrading from "@/sections/MarketPagesSection/CommoditiesTrading";
+import CommoditiesTradingInfo from "@/sections/MarketPagesSection/CommoditiesTradingInfo";
 import CommoditiesWhyAssexMarket from "@/sections/MarketPagesSection/CommoditiesWhyAssexMarket";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
@@ -34,6 +35,7 @@ const CommoditiesPage = () => {
         title="Trade Commodities with Confidence"
         subtitle={`A commodity is any physical good that can be bought or sold on the commodities market. Commodities work in a similar way to other financial markets.\n\nThe exchange value of commodities is often affected by changes in supply and demand of the goods being traded. Commodities can be traded in the physical market or as a derivative.\n\nWe offer competitive spreads on a range of commodities, including Brent Crude Oil and Natural Gas.`}
       />
+      <CommoditiesTradingInfo />
       <CommoditiesWhyAssexMarket />
       <CommoditiesTrading />
       <FAQs faqItems={myFaqs} />

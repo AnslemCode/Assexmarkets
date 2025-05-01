@@ -1,4 +1,4 @@
-import { useMenuContext } from "@/contexta/MobileMenuContext";
+import { useMenuContext } from "@/context/MobileMenuContext";
 
 export default function Close() {
   const { setMenuOpened } = useMenuContext();

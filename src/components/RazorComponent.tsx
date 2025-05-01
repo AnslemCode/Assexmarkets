@@ -87,10 +87,10 @@ const Card = ({
 
       {/* Content */}
       <div className="relative z-20 text-center">
-        <div className="mb-4 transition duration-300 flex items-center justify-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0">
+        <div className="mb-4 transition duration-300 flex items-center justify-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 ">
           {icon}
         </div>
-        <h3 className="text-2xl font-bold text-[#191a45] mb-6 transition duration-300 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white">
+        <h3 className="font-secondary text-2xl font-bold text-[#191a45] mb-6 transition duration-300 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white">
           {title}
         </h3>
         <p className="text-md leading-6 px-2 group-hover/canvas-card:text-white transition duration-300">

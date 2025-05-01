@@ -19,7 +19,7 @@ const ImageLeftBenefitsSection = ({
 }: ImageLeftBenefitsProps) => {
   return (
     <section className="mt-30">
-      <div className="max-w-6xl mx-auto bg-[#1DA1F2]/5 rounded-[60px] px-[50px] pt-[55px] pb-[26px]">
+      <div className="max-w-7xl mx-auto bg-[#1DA1F2]/5 rounded-[60px] px-[50px] pt-[55px] pb-[26px]">
         <h1 className="text-[#1F0d3F] text-center font-bold text-4xl max-w-3xl mx-auto leading-[65px]">
           {title}
         </h1>

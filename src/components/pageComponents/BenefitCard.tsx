@@ -13,7 +13,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-2xl p-6 text-center max-w-sm w-full">
+    <div className="border border-[#E6E6E6] bg-white shadow-md hover:shadow-xl rounded-2xl px-12 py-8 text-center max-w-sm w-full">
       <div className="flex justify-center items-center w-16 h-16 mx-auto mb-4 text-white  rounded-full">
         {icon}
       </div>

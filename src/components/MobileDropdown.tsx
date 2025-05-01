@@ -1,5 +1,6 @@
 import { NavigationLink } from "@/utils/contentTypes";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 interface MobileDropdownProps {
   links: NavigationLink[] | undefined;
@@ -12,14 +13,17 @@ export default function MobileDropdown({ links }: MobileDropdownProps) {
       initial={{ opacity: 0, height: 0 }}
       animate={{ opacity: 1, height: "auto" }}
       transition={{ duration: 0.35, ease: "easeOut" }}
-      className="z-10 flex flex-col gap-y-4 pl-3 overflow-hidden"
+      className="pl-4 flex flex-col gap-3"
     >
       {links?.map((link) => (
-        <motion.li key={link.id}>
-          <a className="text-grey-600 font-secondary text-base" href="#">
+        <li key={link.id}>
+          <Link
+            href={link.href}
+            className="text-sm text-gray-600 hover:text-primary transition font-medium"
+          >
             {link.text}
-          </a>
-        </motion.li>
+          </Link>
+        </li>
       ))}
     </motion.ul>
   );

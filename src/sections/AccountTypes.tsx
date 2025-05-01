@@ -24,7 +24,7 @@ const AccountTypes = () => {
   // const router = useRouter();
   return (
     <section className="mt-50">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
           className="flex flex-col items-center text-center gap-6 px-4"

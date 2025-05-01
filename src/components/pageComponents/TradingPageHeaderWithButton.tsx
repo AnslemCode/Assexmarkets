@@ -1,19 +1,33 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import Button from "../Button";
 import { WhiteFlameButtonIcon } from "../../../public/icons/ButtonIcons";
+import { motion } from "framer-motion";
 
 type TitlePart = {
   text: string;
-  className?: string; // Custom style like text color or weight
+  className?: string;
 };
 
 type TradingPageHeaderProps = {
-  title: string | TitlePart[]; // Single string or array of styled parts
+  title: string | TitlePart[];
   subtitle: string;
   buttonText: string;
   onButtonClick?: () => void;
+};
+
+const containerVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
 };
 
 export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
@@ -35,16 +49,34 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
   };
 
   return (
-    <div className="mt-[110px] text-center px-4 relative">
-      <h1 className="font-secondary text-5xl font-bold text-[#1f0e3f] flex flex-wrap justify-center gap-2 leading-tight">
+    <section className="px-4 sm:px-6 lg:px-8 mt-[100px] text-center relative">
+      <motion.h1
+        className="font-secondary text-2xl sm:text-[40px] md:text-[48px] lg:text-[56px] font-bold text-[#1f0e3f] leading-tight flex flex-wrap justify-center gap-2"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         {renderTitle()}
-      </h1>
+      </motion.h1>
 
-      <p className="mt-6 max-w-[902px] mx-auto text-lg whitespace-pre-line">
+      <motion.p
+        className="mt-6 max-w-3xl mx-auto text-base sm:text-lg whitespace-pre-line"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         {subtitle}
-      </p>
+      </motion.p>
 
-      <div className="relative w-[311px] h-[8px] mx-auto mt-5">
+      <motion.div
+        className="relative w-[200px] sm:w-[280px] h-[6px] sm:h-[8px] mx-auto mt-5"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <Image
           src="/images/bar.png"
           alt="heading bar"
@@ -52,9 +84,15 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
           className="object-contain"
           priority
         />
-      </div>
+      </motion.div>
 
-      <div className="mt-15">
+      <motion.div
+        className="mt-10"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <Button
           icon={<WhiteFlameButtonIcon />}
           text={buttonText}
@@ -62,7 +100,7 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
           variant="primary"
           size="lg"
         />
-      </div>
-    </div>
+      </motion.div>
+    </section>
   );
 };

@@ -1,12 +1,25 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const WhatSection = () => {
   return (
-    <section className="what-section flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 px-6 py-16 lg:py-24">
+    <section className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 px-4 sm:px-6 py-16 lg:py-24">
       {/* Left: Image */}
-      <div className="w-full lg:w-auto flex justify-center overflow-hidden h-[660px]">
-        <div className="relative w-[600px] h-[900px] -translate-y-[322px]">
+      <motion.div
+        className="w-full lg:w-auto flex justify-center overflow-hidden h-[500px] sm:h-[660px]"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <div className="relative w-[320px] sm:w-[480px] md:w-[540px] lg:w-[600px] h-[600px] sm:h-[800px] lg:h-[900px] -translate-y-[100px] sm:-translate-y-[180px] lg:-translate-y-[322px]">
           <Image
             src="/images/yellow-man.png"
             alt="What is the Trading Contest"
@@ -15,14 +28,21 @@ const WhatSection = () => {
             priority
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Right: Text */}
-      <div className="w-full max-w-[527px]">
-        <h2 className="font-secondary text-5xl font-bold leading-14 text-[#0dae94]">
+      <motion.div
+        className="w-full max-w-2xl"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+      >
+        <h2 className="font-secondary text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0dae94] leading-tight">
           What is the Trading Contest?
         </h2>
-        <p className="mt-4 text-lg leading-[28px] whitespace-pre-line">
+        <p className="mt-4 text-base sm:text-lg lg:text-xl leading-relaxed whitespace-pre-line">
           The Trading Contest is a time-bound, high-energy competition where
           traders go head-to-head on a live leaderboard by executing real trades
           in the market. It’s more than just a challenge — it’s an opportunity
@@ -37,7 +57,7 @@ const WhatSection = () => {
           spreads, VIP account access, or personal strategy consultations with
           top analysts.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -26,14 +26,14 @@ const TradingInfoSection: React.FC<TradingInfoSectionProps> = ({
 }) => {
   return (
     <section className="mt-20">
-      <div className="max-w-6xl mx-auto flex flex-col items-center px-4 sm:px-6 text-center">
+      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6 text-center">
         <Badge text={badgeText} />
         <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">
           {title}
         </h1>
-        <p className="text-xl mt-6 max-w-3xl whitespace-pre-line">
+        <div className="text-xl mt-6 max-w-[780px] leading-8 whitespace-pre-line m-0 p-0">
           {description}
-        </p>
+        </div>
 
         {/* Table Section */}
         <div className="mt-16 w-full overflow-x-auto">

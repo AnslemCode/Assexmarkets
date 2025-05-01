@@ -4,7 +4,11 @@ import Image from "next/image";
 const MetalsPageHeader = () => (
   <MarketHeader
     title="Trade Metal CFDs"
-    description="Indices, also called stock indexes, reflect the performance of a group of selected stocks or assets traded on a specific exchange. Well-known global indices include the Dow Jones Industrial Average, ASX 200, Hang Seng, CN50, and the Straits Times Index. Each index follows its own methodology and criteria for selecting the stocks it comprises."
+    description="Take a position on gold, silver and copper. We offer:"
+    bulletPoints={[
+      "Metals including XAU/USD (Gold) and XAG/USD (Silver)",
+      "Competitive spreads",
+    ]}
     button1Text="Create a Live Account"
     button2Text="Try a Free Demo"
     imageElement={

@@ -10,9 +10,10 @@ const footerLinks = [
   {
     title: "Accounts",
     links: [
-      "Demo Trading Accounts",
-      "Professional Accounts",
-      "Standard Accounts",
+      "Live Trading Accounts",
+      "Simulated Trading Accounts",
+      "Copy Trading",
+      "Trading Contest",
       "Portfolio Management Account",
     ],
   },
@@ -22,11 +23,15 @@ const footerLinks = [
   },
   {
     title: "Markets",
-    links: ["Forex CFO", "Commodities CFO", "Indices", "Crypto CFO"],
+    links: ["Forex CFO", "Crypto CFO", "Indices", "Metals", "Commodities CFO"],
   },
   {
-    title: "About Us",
-    links: ["Why AssexMarkets?", "Contact Us", "Help Center"],
+    title: "Platform",
+    links: ["Metatrader 5"],
+  },
+  {
+    title: "Company",
+    links: ["About Us", "Why AssexMarkets?", "Contact Us", "Help Center"],
   },
   {
     title: "Others",
@@ -36,28 +41,32 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#00CCB1]/12 py-16 text-sm">
-      <div className="max-w-6xl mx-auto">
+    <footer className="bg-[#00CCB1]/12 py-16 px-4 sm:px-6 text-sm">
+      <div className="max-w-7xl mx-auto w-full">
         {/* Logo */}
-        <div className="mb-8">
+        <div className="mb-10">
           <Image
-            src="/images/footerLogo.svg"
+            src="/images/logo.svg"
             alt="Assexmarkets Logo"
-            width={56}
-            height={56}
+            width={64}
+            height={38}
           />
         </div>
 
         {/* Link Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-10">
           {footerLinks.map((section) => (
-            <div key={section.title} className="min-w-0">
+            <div key={section.title} className="min-w-[140px]">
               <h4 className="font-medium mb-4 text-[#191a45]">
                 {section.title}
               </h4>
-              <ul className="space-y-4">
+              <ul className="space-y-3">
                 {section.links.map((link, idx) => (
-                  <li key={idx} className="hover:font-semibold cursor-pointer">
+                  <li
+                    key={idx}
+                    className="hover:font-semibold cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap"
+                    title={link}
+                  >
                     {link}
                   </li>
                 ))}
@@ -65,40 +74,38 @@ const Footer = () => {
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Divider */}
-      <hr className="border-[#00CCB1] mt-12 mb-6 h-[1px]" />
+        {/* Divider */}
+        <hr className="border-[#00CCB1] mt-12 mb-8" />
 
-      <div className="max-w-6xl mx-auto">
-        {/* Bottom Row */}
-        <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start mb-8 text-xs text-[#191a45]">
-          <p>© 2025 AssexMarkets Ltd. All rights reserved.</p>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 items-center">
-            <div className="flex gap-3">
-              <span className="hover:font-semibold cursor-pointer">
+        {/* Bottom Section */}
+        <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-6 text-xs text-[#191a45] mb-8">
+          <p className="text-center sm:text-left">
+            © 2025 AssexMarkets Ltd. All rights reserved.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
+            {/* Legal Links */}
+            <div className="flex gap-3 flex-wrap justify-center sm:justify-start">
+              <span className="hover:font-semibold cursor-pointer whitespace-nowrap">
                 Terms & Conditions
               </span>
-              <span className="hover:font-semibold cursor-pointer">
+              <span className="hover:font-semibold cursor-pointer whitespace-nowrap">
                 Privacy Policy
               </span>
             </div>
-            <div className="flex gap-3 items-center">
-              <div className="shrink-0 w-4 h-4 flex items-center justify-center rounded-xl">
-                <XIcon />
-              </div>
-              <div className="shrink-0 w-4 h-4 flex items-center justify-center rounded-xl">
-                <DribbleIcon />
-              </div>
-              <div className="shrink-0 w-4 h-4 flex items-center justify-center rounded-xl">
-                <LinkedInIcon />
-              </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-3 items-center justify-center">
+              <XIcon />
+              <DribbleIcon />
+              <LinkedInIcon />
             </div>
           </div>
         </div>
 
         {/* Disclaimer */}
-        <div className="space-y-4 text-xs leading-relaxed">
+        <div className="space-y-4 text-xs leading-relaxed text-[#191a45]">
           <p>
             Assexmarkets Global Ltd is authorised by the Financial Services
             Regulatory Authority (FSRA) in St. Lucia in compliance with the

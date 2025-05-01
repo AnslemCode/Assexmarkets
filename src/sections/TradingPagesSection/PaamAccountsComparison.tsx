@@ -16,6 +16,8 @@ const PortfolioManagementAccountsComparison = () => {
           "Maximum Lot Size",
           "Maximum number of positions",
           "Hedged margin",
+          "Margin",
+          "Swap Free",
         ]}
         planValues={[
           {
@@ -29,6 +31,8 @@ const PortfolioManagementAccountsComparison = () => {
             "Maximum Lot Size": "100",
             "Maximum number of positions": "200",
             "Hedged margin": "50%",
+            Margin: "30%",
+            "Swap Free": "Avaliable",
           },
           {
             "Minimum Deposit": "Depends on payment system",
@@ -41,6 +45,8 @@ const PortfolioManagementAccountsComparison = () => {
             "Maximum Lot Size": "100",
             "Maximum number of positions": "200",
             "Hedged margin": "50%",
+            Margin: "30%",
+            "Swap Free": "Avaliable",
           },
         ]}
       />

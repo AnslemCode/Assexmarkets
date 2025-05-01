@@ -65,19 +65,19 @@ export function Navbar({ className }: { className?: string }) {
 
         {/* Platform Menu */}
         <MenuItem setActive={setActive} active={active} item="Platform">
-          <div className="text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="text-sm grid grid-cols-1 gap-10 p-4">
             <ProductItem
               title="MetaTrader5"
               href="/metatrader5"
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Demo, Professional, Standard, and Portfolio Management Trading Accounts"
             />
-            <ProductItem
+            {/* <ProductItem
               title="MetaTrader4"
               href="/metatrader4"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Deposit & Withdrawals, Fees, Client Protection"
-            />
+            /> */}
           </div>
         </MenuItem>
 
@@ -105,7 +105,7 @@ export function Navbar({ className }: { className?: string }) {
 
         <MenuItem setActive={setActive} active={active} item="Contact Us">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/contact-form">Contact Form</HoveredLink>
+            <HoveredLink href="/contact-us">Contact Form</HoveredLink>
             <HoveredLink href="/support">Support</HoveredLink>
           </div>
         </MenuItem>

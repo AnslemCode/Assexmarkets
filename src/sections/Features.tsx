@@ -16,7 +16,7 @@ const Features = () => {
         {/* Optional heading */}
         {/* <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#1f0e3f]">Why Traders Choose Us</h2> */}
 
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-7xl">
           <MovingCards items={features} direction="left" speed="slow" />
         </div>
       </div>

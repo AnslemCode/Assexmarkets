@@ -57,7 +57,7 @@ const CallToAction = () => {
             text="Register now"
             icon={<WhiteFlameButtonIcon />}
             variant="primary"
-            className="w-full sm:w-auto"
+            // className="w-full sm:w-auto"
             size="lg"
           />
           <Button
@@ -65,7 +65,7 @@ const CallToAction = () => {
             text="Try a free Demo"
             icon={<VideoButtonIcon />}
             variant="ghost"
-            className="w-full sm:w-auto"
+            // className="w-full sm:w-auto"
             size="lg"
           />
         </motion.div>

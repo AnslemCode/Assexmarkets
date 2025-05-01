@@ -38,7 +38,7 @@ const ClientProtection = () => {
       />
       <FloatingInfoRows
         floatingText="We've got you covered"
-        floatingTextSizeClass="text-[40px] leading-[200px]"
+        floatingTextSizeClass="text-[32px]"
         rows={[
           {
             title: "Regulations",

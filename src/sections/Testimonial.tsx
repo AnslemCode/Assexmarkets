@@ -9,7 +9,7 @@ import TestimonialScroller from "@/components/TestimonialScroller";
 const Testimonial = () => {
   return (
     <section className="py-12 px-4 sm:px-8">
-      <div className="max-w-6xl mx-auto flex flex-col gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* Left Column */}
         <div className="">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-secondary text-[#1f0e3f] font-bold mb-4">

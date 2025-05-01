@@ -4,6 +4,7 @@ import SimulatedResponsiveSection from "@/sections/TradingPagesSection/Simulated
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 import { CheckListIcon, GroupIcon } from "../../../public/icons/svgs";
+import Image from "next/image";
 
 const benefitsData = [
   {
@@ -32,30 +33,30 @@ const benefitsData = [
   },
 ];
 
-type CardItem = {
-  title: string;
-  description: string;
-};
+// type CardItem = {
+//   title: string;
+//   description: string;
+// };
 
-const DemoLiveCard = ({ title, description }: CardItem) => (
-  <div className="bg-[#F9FAFB] rounded-xl p-6 w-full">
-    <h4 className="text-xl font-semibold mb-2 text-[#1F0d3F]">{title}</h4>
-    <p className="text-sm text-[#4B5563]">{description}</p>
-  </div>
-);
+// const DemoLiveCard = ({ title, description }: CardItem) => (
+//   <div className="bg-[#F9FAFB] rounded-xl p-6 w-full">
+//     <h4 className="text-xl font-semibold mb-2 text-[#1F0d3F]">{title}</h4>
+//     <p className="text-sm text-[#4B5563]">{description}</p>
+//   </div>
+// );
 
-const accountCards = [
-  {
-    title: "Demo Account",
-    description:
-      "Perfect for beginners and strategy testing without financial risk.",
-  },
-  {
-    title: "Live Account",
-    description:
-      "Trade real markets with real money and full access to features.",
-  },
-];
+// const accountCards = [
+//   {
+//     title: "Demo Account",
+//     description:
+//       "Perfect for beginners and strategy testing without financial risk.",
+//   },
+//   {
+//     title: "Live Account",
+//     description:
+//       "Trade real markets with real money and full access to features.",
+//   },
+// ];
 
 const LiveAccountTradingPage = () => {
   return (
@@ -70,23 +71,13 @@ const LiveAccountTradingPage = () => {
         title="Benefits of using an Assexmarkets Live Trading Account"
         benefits={benefitsData}
         rightContent={
-          <div className="bg-white rounded-[20px] p-10 max-w-lg shadow-md w-full">
-            <h2 className="text-center text-2xl font-bold text-[#1F0d3F]">
-              Select a trading account
-            </h2>
-            <p className="text-sm mt-2 text-center">
-              Experience the market on your terms.
-            </p>
-            <div className="mt-8 flex flex-col gap-6">
-              {accountCards.map((card) => (
-                <DemoLiveCard
-                  key={card.title}
-                  title={card.title}
-                  description={card.description}
-                />
-              ))}
-            </div>
-          </div>
+          <Image
+            src="/images/TradingAccount.png"
+            alt="Live Account Image"
+            width={600}
+            height={505}
+            className=""
+          />
         }
       />
       <SimulatedResponsiveSection />

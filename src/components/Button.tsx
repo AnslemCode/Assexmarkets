@@ -7,7 +7,7 @@ type CustomButtonProps = {
   onClick?: () => void;
   className?: string;
   variant?: "default" | "primary" | "outlinedDark" | "ghost";
-  size?: "sm" | "lg"; // added size prop
+  size?: "sm" | "md" | "lg"; // now includes "md"
 };
 
 const Button: React.FC<CustomButtonProps> = ({
@@ -16,10 +16,10 @@ const Button: React.FC<CustomButtonProps> = ({
   onClick,
   className = "",
   variant = "default",
-  size = "sm", // default size is sm
+  size = "sm", // default size
 }) => {
   const baseStyles =
-    "font-secondary inline-flex justify-center items-center gap-2 font-medium transition duration-200 ease-in-out rounded-full cursor-pointer";
+    "font-secondary inline-flex justify-center items-center gap-2 font-medium transition duration-200 ease-in-out rounded-full cursor-pointer h-[60px]";
 
   const variantStyles = {
     primary: "bg-[#0dae94] text-white hover:bg-[#0ca88d]",
@@ -31,8 +31,9 @@ const Button: React.FC<CustomButtonProps> = ({
   };
 
   const sizeStyles = {
-    sm: "px-4 py-2 w-fit text-base",
-    lg: "px-8 py-5 w-fit text-lg",
+    sm: "w-[256px] text-base",
+    md: "w-[288px] text-base",
+    lg: "w-[352px] text-base",
   };
 
   return (

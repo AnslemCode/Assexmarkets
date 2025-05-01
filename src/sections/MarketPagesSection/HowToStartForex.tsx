@@ -34,7 +34,7 @@ const steps = [
 const HowToStartForex = () => {
   return (
     <section className="my-30">
-      <div className="max-w-6xl mx-auto flex flex-col items-center px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="Trading Contest" />
         <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">
           Forex CFD Trading

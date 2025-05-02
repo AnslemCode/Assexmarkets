@@ -26,7 +26,7 @@ const PlatformTourCTA = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10"
+        className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-16 md:gap-24 lg:gap-40"
       >
         <motion.div
           layout

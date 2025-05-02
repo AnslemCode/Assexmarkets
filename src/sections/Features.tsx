@@ -11,7 +11,7 @@ import {
 
 const Features = () => {
   return (
-    <section className="py-16 md:py-24 text-center relative overflow-hidden bg-white">
+    <section className="py-12 md:py-20 lg:py-24 text-center relative overflow-hidden">
       <div className="container mx-auto px-4 flex flex-col items-center justify-center">
         {/* Optional heading */}
         {/* <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#1f0e3f]">Why Traders Choose Us</h2> */}

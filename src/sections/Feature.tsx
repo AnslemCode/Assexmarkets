@@ -26,7 +26,7 @@ const Feature = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-16 md:gap-24 lg:gap-40"
         >
           {/* Text Content */}
           <div className="md:flex-1 text-center md:text-left">

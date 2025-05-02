@@ -87,10 +87,10 @@ export const MovingCards = ({
         {items.map((item, index) => (
           <li
             key={index}
-            className="relative shrink-0 px-6 py-6 flex items-center justify-center gap-4 text-center"
+            className="relative shrink-0 px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-center gap-3 sm:gap-4 text-center"
           >
-            <div>{item.icon}</div>
-            <span className="font-medium text-2xl text-[#1f0d3f]">
+            <div className="text-2xl sm:text-3xl">{item.icon}</div>
+            <span className="font-medium text-sm sm:text-lg text-[#1f0d3f]">
               {item.label}
             </span>
           </li>

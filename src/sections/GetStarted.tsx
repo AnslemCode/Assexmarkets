@@ -50,7 +50,7 @@ export function StepsSection() {
           animate="visible"
           variants={fadeUp}
           custom={0}
-          className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-16"
+          className="flex flex-col lg:flex-row justify-between items-center gap-8"
         >
           <div className="flex-1 space-y-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1f0e3f] font-secondary">
@@ -67,7 +67,7 @@ export function StepsSection() {
         </motion.div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {steps.map((step, index) => (
             <motion.div
               key={index}

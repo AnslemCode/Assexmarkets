@@ -17,7 +17,7 @@ const Hero = () => {
   const words = ["Best", "Optimal", "Ideal", "Winning", "Leading"];
 
   return (
-    <section className="relative min-h-screen bg-[#00CCB1]/10 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[120px] md:pt-[160px] lg:pt-[180px]">
+    <section className="relative min-h-fit  bg-[#00CCB1]/3 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[120px] md:pt-[160px] lg:pt-[180px]">
       {/* Background Effects */}
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
@@ -60,17 +60,19 @@ const Hero = () => {
             variant="primary"
             icon={<WhiteFlameButtonIcon />}
             text="Create a Live Account"
+            size="md"
           />
           <Button
             variant="ghost"
             icon={<VideoButtonIcon />}
             text="Try a Free Demo"
+            size="md"
           />
         </motion.div>
       </div>
 
       {/* Hero Image */}
-      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-20 sm:-mt-24 z-0">
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-18 sm:-mt-24 z-0">
         <Image
           src="/images/herobgImage.png"
           alt="Hero background"

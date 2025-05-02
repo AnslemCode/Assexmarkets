@@ -8,7 +8,7 @@ import TestimonialScroller from "@/components/TestimonialScroller";
 
 const Testimonial = () => {
   return (
-    <section className="py-12 px-4 sm:px-8">
+    <section className="mt-30 sm:mt-40 md:mt-48py-12 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* Left Column */}
         <div className="">

@@ -28,7 +28,7 @@ const cardAnimation = {
 
 const PaymentMethods = () => {
   return (
-    <section className="px-4 sm:px-6 md:px-10 mt-16 sm:mt-20">
+    <section className="px-4 sm:px-6 md:px-10 mt-24 sm:mt-36">
       <motion.div
         initial="hidden"
         whileInView="visible"

@@ -23,7 +23,7 @@ const containerVariants = {
 const AccountTypes = () => {
   // const router = useRouter();
   return (
-    <section className="mt-50">
+    <section className="mt-36 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -35,7 +35,7 @@ const AccountTypes = () => {
           custom={0}
         >
           <Badge text="Account Types" />
-          <h2 className="font-secondary text-3xl sm:text-4xl md:text-[40px] font-bold text-[#1f0e3f]">
+          <h2 className="font-secondary text-3xl sm:text-4xl font-bold text-[#1f0e3f]">
             Simple and Trustworthy
           </h2>
           <p className="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-8">
@@ -47,7 +47,7 @@ const AccountTypes = () => {
 
         {/* Plan Cards */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mt-16 px-4"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-8 mt-10 place-items-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

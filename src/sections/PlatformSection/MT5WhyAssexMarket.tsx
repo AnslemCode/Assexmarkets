@@ -9,10 +9,10 @@ const MT5WhyAssexMarket = () => {
     <section className="my-30">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="Why Assexmarkets?" />
-        <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">
-          Why trade commodities with Assexmarkets
+        <h1 className="font-secondary font-bold text-3xl sm:text-4xl text-[#191A15] mt-6">
+          Why Assexmarkets?
         </h1>
-        <p className="text-xl text-center mt-6 max-w-[879px] mx-auto">
+        <p className="text-lg sm:text-xl text-left sm:text-center mt-6 max-w-[879px] mx-auto">
           ​AssexMarkets offers a comprehensive trading experience on the
           MetaTrader 5 (MT5) platform, catering to both novice and experienced
           traders. Here are some reasons why traders might choose AssexMarkets

@@ -44,7 +44,7 @@ const CryptoBenefits = () => {
             height={336}
             className=""
           />
-          <div className="flex gap-4 mt-12">
+          <div className="flex flex-col md:flex-row gap-4 mt-12">
             <Button
               icon={<WhiteFlameButtonIcon />}
               text="Create a Live Account"

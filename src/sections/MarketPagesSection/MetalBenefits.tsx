@@ -6,7 +6,7 @@ import Image from "next/image";
 const MetalBenefits = () => {
   return (
     <ImageLeftBenefitsSection
-      title="Why You'll Love Our Platform"
+      title="Benefits of Metal Trading"
       benefits={[
         {
           icon: <GroupIcon />,
@@ -27,6 +27,8 @@ const MetalBenefits = () => {
           alt="Gold mint"
           width={400}
           height={600}
+          style={{ maxHeight: "400px", width: "auto", height: "auto" }}
+          priority
         />
       }
     />

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const IndicesWhatSection = () => {
+const MetalsWhatSection = () => {
   return (
     <section className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 px-6 py-16 lg:py-24 max-w-7xl mx-auto">
       {/* Left: Text */}
@@ -16,27 +16,20 @@ const IndicesWhatSection = () => {
         className="w-full max-w-[600px]"
       >
         <h2 className="font-secondary text-3xl md:text-5xl font-bold text-[#0dae94] tracking-[-0.01em]">
-          What is Indices Trading
+          What is Metal Trading
         </h2>
         <p className="mt-4 md:text-lg leading-[28px] whitespace-pre-line text-[#3F4550]">
-          Indices trading refers to buying and selling financial instruments
-          that track the performance of a group of stocks or other financial
-          assets, rather than individual securities.
-          {"\n\n"}An index is essentially a measurement of the performance of a
-          particular market, and indices trading involves trading on the
-          direction of that market by buying or selling derivatives based on the
-          index.
-          {"\n\n"}For example, the S&P 500 index tracks the performance of the
-          top 500 publicly traded companies in the United States.
-          {"\n\n"}By trading S&P 500 futures contracts, traders can trade on
-          whether they believe the overall value of those companies will go up
-          or down.
-          {"\n\n"}Indices trading can be done through a variety of financial
-          instruments, including contracts for difference (CFDs) which allows
-          for leveraged trading. At HFM, you can trade CFDs on major Indices,
-          such as UK 100 and GER 40, with leverage and ultra-fast execution.
-          {"\n\n"}You can choose between the MT4 and MT5 platforms and the HFM
-          App to start trading CFDs on Indices.
+          Metals trading involves buying and selling different metals like gold,
+          silver, copper, platinum, and more within financial markets.
+          {"\n\n"}These metals are traded as commodities on global exchanges,
+          with their prices affected by factors such as supply and demand,
+          geopolitical developments, and economic trends.
+          {"\n\n"}Trading metals can occur in various ways, including physical
+          trading where the actual metal is delivered, or through Contracts for
+          Difference (CFDs), which offer the advantage of leverage.
+          {"\n\n"}At Assexmarkets, you can trade metal CFDs with leverage,
+          allowing you to increase your position size and potentially enhance
+          your trading opportunities.
         </p>
       </motion.div>
 
@@ -60,4 +53,4 @@ const IndicesWhatSection = () => {
   );
 };
 
-export default IndicesWhatSection;
+export default MetalsWhatSection;

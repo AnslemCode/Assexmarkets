@@ -2,6 +2,7 @@ import FAQs, { FAQItem } from "@/sections/FAQs";
 import MetalBenefits from "@/sections/MarketPagesSection/MetalBenefits";
 import MetalsPageHeader from "@/sections/MarketPagesSection/MetalsPageHeader";
 import MetalsTradingInfo from "@/sections/MarketPagesSection/MetalsTradingInfo";
+import MetalsWhatSection from "@/sections/MarketPagesSection/MetalsWhatSection";
 import MetalsWhyAssexMarket from "@/sections/MarketPagesSection/MetalsWhyAssexMarket";
 import MetalTrading from "@/sections/MarketPagesSection/MetalTrading";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
@@ -34,6 +35,7 @@ const MetalsPage = () => {
     <>
       <MetalsPageHeader />
       <MetalsTradingInfo />
+      <MetalsWhatSection />
       <MetalBenefits />
       <MetalsWhyAssexMarket />
       <MetalTrading />

@@ -1,7 +1,8 @@
 import TradingPagesHeading from "@/components/pageComponents/TradingPagesHeading";
 import FAQs, { FAQItem } from "@/sections/FAQs";
-import PortfolioManagementAccountsComparison from "@/sections/TradingPagesSection/PaamAccountsComparison";
-import PortfolioManagementAccountTypes from "@/sections/TradingPagesSection/PaamAccountTypes";
+import PaamDetails from "@/sections/TradingPagesSection/PaamDetails";
+import PaamStrategies from "@/sections/TradingPagesSection/PaamStrategies";
+import PaamWhyOpen from "@/sections/TradingPagesSection/PaamWhyOpen";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import React from "react";
 
@@ -35,8 +36,9 @@ const PercentageAllocationAssetManagement = () => {
         title="Percentage Allocation Asset Management (PAMM)"
         subtitle="Accounts that meet the needs of Portfolio Managers.Use these accounts for trading in Funds created in the Portfolio Management feature."
       />
-      <PortfolioManagementAccountTypes />
-      <PortfolioManagementAccountsComparison />
+      <PaamDetails />
+      <PaamStrategies />
+      <PaamWhyOpen />
       <FAQs faqItems={myFaqs} />
       <TradingPageCTA />
     </>

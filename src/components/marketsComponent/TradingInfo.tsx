@@ -26,28 +26,34 @@ const TradingInfoSection: React.FC<TradingInfoSectionProps> = ({
 }) => {
   return (
     <section className="mt-20">
-      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <Badge text={badgeText} />
-        <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">
+        <h2 className="font-secondary font-bold text-3xl sm:text-4xl text-[#191A15] mt-6">
           {title}
-        </h1>
-        <div className="text-xl mt-6 max-w-[780px] leading-8 whitespace-pre-line m-0 p-0">
+        </h2>
+        <p className="text-base sm:text-lg mt-4 leading-relaxed text-[#4B5563] max-w-3xl mx-auto whitespace-pre-line">
           {description}
-        </div>
+        </p>
 
         {/* Table Section */}
-        <div className="mt-16 w-full overflow-x-auto">
-          <div className="shadow-xl overflow-hidden border border-[#E5E7EB] bg-white">
+        <div className="mt-12 w-full overflow-x-auto">
+          <div className="inline-block min-w-full shadow-lg border border-[#E5E7EB] rounded-xl overflow-hidden bg-white">
             <table className="min-w-full text-left border-collapse">
               <thead>
-                <tr className="bg-gradient-to-r from-[#F8FAFC] to-[#EFF6FF] font-semibold text-[#1f0d3f] text-sm">
-                  <th className="px-4 py-6 font-medium">Instrument</th>
-                  <th className="px-4 py-6 font-medium">Sell</th>
-                  <th className="px-4 py-6 font-medium">Buy</th>
-                  <th className="px-4 py-6 font-medium">Spread</th>
-                  <th className="px-4 py-6 font-medium">% Change</th>
-                  <th className="px-4 py-6 font-medium">Today High</th>
-                  <th className="px-4 py-6 font-medium">Today Low</th>
+                <tr className="bg-gradient-to-r from-[#F8FAFC] to-[#EFF6FF] text-[#1F0D3F] text-sm sm:text-base font-semibold">
+                  {[
+                    "Instrument",
+                    "Sell",
+                    "Buy",
+                    "Spread",
+                    "% Change",
+                    "Today High",
+                    "Today Low",
+                  ].map((header) => (
+                    <th key={header} className="px-4 py-5 whitespace-nowrap">
+                      {header}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -58,19 +64,19 @@ const TradingInfoSection: React.FC<TradingInfoSectionProps> = ({
                   return (
                     <tr
                       key={idx}
-                      className="border-t border-[#F3F4F6] text-sm text-[#191A15] transition-colors hover:bg-[#F9FAFB]"
+                      className="border-t border-[#F3F4F6] text-sm sm:text-base text-[#191A15] transition-colors hover:bg-[#FAFAFA]"
                     >
-                      <td className="px-4 py-6 font-medium whitespace-nowrap underline">
+                      <td className="px-4 py-5 font-medium underline text-blue-700 whitespace-nowrap">
                         {row.instrument}
                       </td>
-                      <td className="px-4 py-6 whitespace-nowrap">
+                      <td className="px-4 py-5 whitespace-nowrap">
                         {row.sell}
                       </td>
-                      <td className="px-4 py-6 whitespace-nowrap">{row.buy}</td>
-                      <td className="px-4 py-6 whitespace-nowrap">
+                      <td className="px-4 py-5 whitespace-nowrap">{row.buy}</td>
+                      <td className="px-4 py-5 whitespace-nowrap">
                         {row.spread}
                       </td>
-                      <td className="px-4 py-6 flex items-center gap-1 whitespace-nowrap">
+                      <td className="px-4 py-5 flex items-center gap-1 text-sm sm:text-base whitespace-nowrap">
                         {isPositive ? (
                           <ArrowUp className="text-green-500 w-4 h-4" />
                         ) : (
@@ -84,10 +90,10 @@ const TradingInfoSection: React.FC<TradingInfoSectionProps> = ({
                           {row.change}%
                         </span>
                       </td>
-                      <td className="px-4 py-6 whitespace-nowrap">
+                      <td className="px-4 py-5 whitespace-nowrap">
                         {row.high}
                       </td>
-                      <td className="px-4 py-6 whitespace-nowrap">{row.low}</td>
+                      <td className="px-4 py-5 whitespace-nowrap">{row.low}</td>
                     </tr>
                   );
                 })}

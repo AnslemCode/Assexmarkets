@@ -19,28 +19,33 @@ const ImageLeftBenefitsSection = ({
 }: ImageLeftBenefitsProps) => {
   return (
     <section className="mt-30">
-      <div className="max-w-7xl mx-auto bg-[#1DA1F2]/5 rounded-[60px] px-[50px] pt-[55px] pb-[26px]">
-        <h1 className="text-[#1F0d3F] text-center font-bold text-4xl max-w-3xl mx-auto leading-[65px]">
+      <div className="max-w-7xl mx-auto rounded-[40px] bg-[#1DA1F2]/5 px-6 sm:px-12 py-8 lg:py-12">
+        {/* Title */}
+        <h2 className="text-[#1F0D3F] text-center font-bold text-3xl md:text-4xl leading-tight max-w-4xl mx-auto">
           {title}
-        </h1>
-        <div className="mt-[50px] pt-8 pb-[42px] flex gap-[100px] items-center flex-wrap lg:flex-nowrap">
-          {/* Left - Flexible Content (e.g., Image) */}
-          <div className="flex-1 w-full md:w-auto flex justify-center">
-            {leftContent}
+        </h2>
+
+        {/* Content */}
+        <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-20">
+          {/* Left Content (Image or Custom Component) */}
+          <div className="w-full lg:w-[40%] flex justify-center">
+            <div className="max-h-[400px] w-auto">{leftContent}</div>
           </div>
 
-          {/* Right - Benefits */}
-          <div className="flex flex-col gap-10 w-full max-w-[440px]">
+          {/* Right Benefits List */}
+          <div className="w-full lg:w-[60%] flex flex-col gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start gap-[30px]">
-                <div className="bg-white rounded-[15px] flex items-center justify-center w-15 h-15 min-w-[60px] shadow-md">
+              <div key={index} className="flex items-start gap-6">
+                <div className="min-w-[60px] min-h-[60px] bg-white rounded-xl flex items-center justify-center shadow-lg">
                   {benefit.icon}
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-[#1F0d3F]">
+                  <h3 className="text-lg font-semibold text-[#1F0D3F]">
                     {benefit.title}
                   </h3>
-                  <p className="mt-2">{benefit.subtext}</p>
+                  <p className="text-[#4a4a4a] mt-2 leading-relaxed">
+                    {benefit.subtext}
+                  </p>
                 </div>
               </div>
             ))}

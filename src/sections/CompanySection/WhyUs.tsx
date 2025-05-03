@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 
@@ -38,37 +40,45 @@ We encourage all traders to exercise due diligence and trade responsibly.`,
 
 const AboutUsSection = () => {
   return (
-    <section>
-      <div className="max-w-7xl mx-auto flex flex-col gap-[120px] px-6 py-16 lg:py-24">
+    <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24 bg-white">
+      <div className="max-w-7xl mx-auto space-y-24">
         {aboutSections.map((section, index) => (
-          <div
+          <motion.div
             key={index}
-            className={`flex flex-col lg:flex-row ${
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className={`flex flex-col-reverse items-center gap-12 md:gap-20 lg:flex-row ${
               section.reverse ? "lg:flex-row-reverse" : ""
-            } items-center justify-center gap-10 lg:gap-41`}
+            }`}
           >
             {/* Text */}
-            <div className="w-full max-w-[527px] text-center lg:text-left">
-              <h2 className="font-secondary text-5xl font-bold leading-[1.2] text-[#0dae94] whitespace-nowrap">
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#0dae94] mb-4">
                 {section.title}
               </h2>
-              <p className="mt-4 text-lg leading-[28px] whitespace-pre-line">
+              <p className="text-gray-700 whitespace-pre-line text-base sm:text-lg leading-relaxed">
                 {section.text}
               </p>
             </div>
 
             {/* Image */}
-            <div className="flex justify-center">
-              <Image
-                src={section.image}
-                alt={section.title}
-                width={section.imageWidth}
-                height={section.imageHeight}
-                className="rounded-xl object-cover"
-                priority
-              />
+            {/* Image Section */}
+            <div className="w-full lg:w-1/2">
+              <div className="w-full max-w-[480px] mx-auto">
+                <Image
+                  src={section.image}
+                  alt={section.title}
+                  width={800}
+                  height={500}
+                  layout="responsive"
+                  className="rounded-xl object-cover"
+                  priority
+                />
+              </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

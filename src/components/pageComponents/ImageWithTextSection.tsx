@@ -28,7 +28,9 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
   return (
     <section className="py-16 px-4 sm:px-6">
       <div
-        className={`max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16 ${
+        className={`${
+          imageOnLeft ? "" : "mx-auto"
+        } max-w-7xl flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16 ${
           imageOnLeft ? "md:flex-row-reverse" : ""
         }`}
       >
@@ -41,10 +43,10 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="font-secondary text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1f0d3f] leading-tight">
+          <h2 className="font-secondary text-3xl sm:text-4xl font-bold text-[#1f0d3f] leading-tight">
             {title}
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg leading-relaxed">
             {description}
           </p>
           <div className="mt-8">
@@ -60,7 +62,11 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
 
         {/* Image Content */}
         <motion.div
-          className="w-full md:w-1/2 flex justify-center items-center"
+          className={`w-full md:w-[45%] lg:w-[50%] flex ${
+            imageOnLeft
+              ? "justify-start items-center"
+              : "justify-center items-center"
+          } `}
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"

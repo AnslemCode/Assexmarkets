@@ -38,15 +38,15 @@ const MT5GetStarted = () => {
     <section className="my-30">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="MT5" />
-        <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">
+        <h1 className="font-secondary font-bold text-3xl sm:text-4xl text-[#191A15] mt-6">
           Get Started with MT5 Today
         </h1>
-        <p className="text-xl text-center mt-6 max-w-[879px] mx-auto">
+        <p className="textlg sm:text-xl text-left sm:text-center mt-6 max-w-3xl mx-auto">
           All trades are executed with top-tier security, transparency, and
           lightning speed.
         </p>
 
-        <div className="mt-16 flex flex-wrap justify-center gap-20">
+        <div className="mt-16 flex flex-wrap justify-center gap-10">
           {steps.map((item, index) => (
             <StepCard key={index} stepNumber={item.step}>
               <p className="">{item.text}</p>

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import Link from "next/link";
 
 export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -95,8 +96,21 @@ export function Navbar({ className }: { className?: string }) {
           </div>
         </MenuItem>
 
+        <Link
+          href="/about-us"
+          className="cursor-pointer text-white font-medium hover:opacity-[0.9]"
+        >
+          Company
+        </Link>
+        <Link
+          href="/contact-us"
+          className="cursor-pointer text-white font-medium hover:opacity-[0.9]"
+        >
+          Contact Us
+        </Link>
+
         {/* Additional Menu Items */}
-        <MenuItem setActive={setActive} active={active} item="Company">
+        {/* <MenuItem setActive={setActive} active={active} item="Company">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/about-us">About Us</HoveredLink>
             <HoveredLink href="/careers">Careers</HoveredLink>
@@ -108,7 +122,7 @@ export function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/contact-us">Contact Form</HoveredLink>
             <HoveredLink href="/support">Support</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem> */}
       </Menu>
     </div>
   );

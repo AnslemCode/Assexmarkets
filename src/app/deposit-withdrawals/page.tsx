@@ -1,5 +1,6 @@
 import FAQs, { FAQItem } from "@/sections/FAQs";
 import SecureInfoSection from "@/sections/TradingPagesSection/SecureInfoSection";
+import SupportedPaymentsSection from "@/sections/TradingPagesSection/SupportedPaymentMethods";
 import TradingHeaderSection from "@/sections/TradingPagesSection/TradingConditionsHeader";
 import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 import WhyChooseUs from "@/sections/TradingPagesSection/WhyChooseUs";
@@ -89,7 +90,7 @@ const DepositWithdrawalsPage = () => {
         }
         rightText="Register in 5 minutes with just 3 easy steps"
       />
-
+      <SupportedPaymentsSection />
       <FAQs faqItems={myFaqs} />
       <TradingPageCTA />
     </>

@@ -15,11 +15,11 @@ const CryptoConditions = () => {
               title: "Crypto Trading Hours",
               description: (
                 <>
-                  <p>
+                  <span>
                     You can trade cryptocurrencies 24/7 except during server
                     maintenance. We will inform you via email when this takes
                     place.
-                  </p>
+                  </span>
                   <ul className="list-disc list-inside mt-4 space-y-2">
                     <li>
                       BTCAUD, BTCJPY, BTCCNH, BTCTHB, BTCZAR: on Sunday from

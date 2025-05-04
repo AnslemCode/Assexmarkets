@@ -4,9 +4,13 @@ import Link from "next/link";
 
 interface MobileDropdownProps {
   links: NavigationLink[] | undefined;
+  onLinkClick: () => void;
 }
 
-export default function MobileDropdown({ links }: MobileDropdownProps) {
+export default function MobileDropdown({
+  links,
+  onLinkClick,
+}: MobileDropdownProps) {
   return (
     <motion.ul
       initial={{ opacity: 0, height: 0 }}
@@ -19,6 +23,7 @@ export default function MobileDropdown({ links }: MobileDropdownProps) {
         <li key={link.id}>
           <Link
             href={link.href}
+            onClick={onLinkClick}
             className="block text-sm hover:text-primary transition font-medium px-2 py-1"
           >
             {link.text}

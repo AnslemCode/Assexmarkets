@@ -86,7 +86,10 @@ export default function MobileMenu() {
                           transition={{ duration: 0.3, ease: "easeOut" }}
                           className="overflow-hidden ml-2 pl-2 py-4 border border-[#4B8BFF] rounded-lg bg-[#1da1f2]/5"
                         >
-                          <MobileDropdown links={link.dropdownLinks} />
+                          <MobileDropdown
+                            links={link.dropdownLinks}
+                            onLinkClick={() => setMenuOpened(false)}
+                          />
                         </motion.div>
                       )}
                     </AnimatePresence>

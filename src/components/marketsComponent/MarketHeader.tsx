@@ -32,7 +32,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
   imageElement,
 }) => {
   return (
-    <section className="bg-[rgba(0,204,177,0.02)] px-4 sm:px-8 lg:px-26 py-20 lg:py-24">
+    <section className="bg-[rgba(0,204,177,0.02)] px-4 sm:px-6 lg:px-20 py-20 lg:py-24">
       <div
         className={`mx-auto flex flex-col-reverse lg:flex-row ${
           reverse ? "lg:flex-row-reverse" : ""
@@ -43,14 +43,14 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
           initial={{ opacity: 0, x: reverse ? 100 : -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full max-w-[747px]"
+          className="w-full lg:max-w-[747px] text-center lg:text-left"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#1F0d3f] leading-tight">
+          <h2 className="text-[28px] sm:text-[32px] lg:text-[40px] font-secondary font-bold text-[#1F0d3f] leading-tight">
             {title}
           </h2>
 
           {description && (
-            <p className="text-lg leading-relaxed mt-6 text-[#3F4550] max-w-[709px]">
+            <p className="text-base sm:text-lg leading-relaxed mt-6 max-w-[709px]">
               {description}
             </p>
           )}

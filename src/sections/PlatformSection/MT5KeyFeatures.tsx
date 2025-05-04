@@ -8,7 +8,7 @@ const MT5KeyFeatures = () => {
     <section className="my-30">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="Features" />
-        <h1 className="font-secondary font-bold text-3xl sm:text-4xl text-[#191A15] mt-6">
+        <h1 className="font-secondary font-bold text-[32px]  text-[#191A15] mt-6">
           Key <span className="text-[#0dae94]">Features</span>
         </h1>
         <div className="mt-10 grid gap-8 md:grid-cols-3 justify-items-center">
@@ -20,7 +20,7 @@ const MT5KeyFeatures = () => {
           <BenefitCard
             icon={<TrendIcon />}
             title="Hedging System"
-            description="In MetaTrader 5 with Exness, you can experience trading using the hedging mode system. Hedging allows you to open multiple positions, even exact opposite positions, for a trading instrument."
+            description="In MetaTrader 5 with Assexmarkets, you can experience trading using the hedging mode system. Hedging allows you to open multiple positions, even exact opposite positions, for a trading instrument."
           />
           <BenefitCard
             icon={<TrendIcon />}

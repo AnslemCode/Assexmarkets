@@ -40,7 +40,7 @@ const CallToAction = () => {
       >
         <motion.h2
           variants={fadeInUp}
-          className="text-3xl sm:text-4xl font-bold font-secondary text-[#1f0e3f]"
+          className="text-2xl md:text-[32px] font-bold font-secondary text-[#1f0e3f]"
         >
           Join over 100k+ users to trade with a trusted broker today
         </motion.h2>

@@ -48,10 +48,10 @@ const HowItWorks = () => {
     <section className="my-30">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="Trading Contest" />
-        <h1 className="font-secondary font-bold text-3xl md:text-4xl lg:text-[40px] text-[#191A15] mt-6 text-center">
+        <h1 className="font-secondary font-bold text-[32px] text-[#191A15] mt-6 text-center">
           How it works
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-center mt-6 max-w-[879px] mx-auto">
+        <p className="text-base sm:text-lg text-center mt-6 max-w-[879px] mx-auto">
           Trading Forex CFDs (Contracts for Difference) lets you speculate on
           the price movements of currency pairs without owning the underlying
           assets. At AssexMarkets, we make it simple, fast, and secure to get
@@ -64,7 +64,7 @@ const HowItWorks = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
+          className="mt-16 flex flex-wrap justify-center gap-10"
         >
           {steps.map((item, index) => (
             <StepCard key={index} stepNumber={item.step}>

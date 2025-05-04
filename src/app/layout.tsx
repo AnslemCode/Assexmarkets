@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 import { MenuContextProvider } from "@/context/MobileMenuContext";
+import MobileMenu from "@/components/MobileMenu";
 
 const interFont = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
         <MenuContextProvider>
           <>
             <Header />
+            <MobileMenu />
             {children}
             <Footer />
           </>

@@ -26,7 +26,7 @@ const PlatformTourCTA = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-16 md:gap-24 lg:gap-40"
+        className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24 lg:gap-40"
       >
         <motion.div
           layout
@@ -44,7 +44,7 @@ const PlatformTourCTA = () => {
           layout
           className="md:flex-1 text-center md:text-left w-full"
         >
-          <h2 className="font-secondary font-bold text-2xl sm:text-3xl md:text-[40px] text-[#1f0d3f] tracking-tight">
+          <h2 className="font-secondary font-bold text-2xl sm:text-[32px] text-[#1f0d3f] tracking-tight">
             Take advantage of MetaTrader
           </h2>
           <p className="font-primary text-base sm:text-lg leading-relaxed mt-4">

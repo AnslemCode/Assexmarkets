@@ -12,7 +12,7 @@ const Testimonial = () => {
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* Left Column */}
         <div className="">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-secondary text-[#1f0e3f] font-bold mb-4">
+          <h2 className="text-2xl sm:text-[32px] font-secondary text-[#1f0e3f] font-bold mb-4">
             What users are saying
           </h2>
           <p className="text-base sm:text-lg mb-6 max-w-full sm:max-w-md">

@@ -36,10 +36,10 @@ const StandardTradingAccountTypes = () => {
           custom={0}
         >
           <Badge text="Standard Trading Accounts" />
-          <h2 className="font-secondary text-[40px] font-bold text-[#1f0e3f]">
+          <h2 className="font-secondary text-[32px] font-bold text-[#1f0e3f]">
             Reliable Trading for Every Trader
           </h2>
-          <p className="text-xl leading-8">
+          <p className="text-lg leading-8">
             Experience flexibility and simplicity with our Standard account
             types— designed for both beginners and seasoned traders.
           </p>

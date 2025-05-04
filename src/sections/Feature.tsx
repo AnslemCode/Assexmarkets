@@ -26,11 +26,11 @@ const Feature = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start gap-16 md:gap-24 lg:gap-40"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-16 md:gap-24 lg:gap-40"
         >
           {/* Text Content */}
           <div className="md:flex-1 text-center md:text-left">
-            <h2 className="font-secondary font-bold text-3xl sm:text-4xl md:text-5xl text-[#0dae94] mb-6 tracking-tight max-w-md mx-auto md:mx-0">
+            <h2 className="font-secondary font-bold text-2xl sm:text-[32px] text-[#0dae94] mb-6 tracking-tight max-w-md mx-auto md:mx-0">
               Earn as a Professional trader
             </h2>
             <p className="font-primary text-base sm:text-lg leading-[28px] max-w-xl mx-auto md:mx-0">

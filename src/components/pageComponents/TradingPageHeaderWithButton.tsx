@@ -51,7 +51,7 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
   return (
     <section className="px-4 sm:px-6 lg:px-8 mt-[100px] text-center relative">
       <motion.h1
-        className="font-secondary text-2xl sm:text-[40px] md:text-[48px] lg:text-[56px] font-bold text-[#1f0e3f] leading-tight flex flex-wrap justify-center gap-2"
+        className="font-secondary text-2xl sm:text-3xl font-bold text-[#1f0e3f] leading-tight flex flex-wrap justify-center gap-2"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -98,7 +98,7 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
           text={buttonText}
           onClick={onButtonClick}
           variant="primary"
-          size="lg"
+          size="md"
         />
       </motion.div>
     </section>

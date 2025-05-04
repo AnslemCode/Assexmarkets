@@ -50,7 +50,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
   const imageHeight = isSimulatedPage ? 346 : 390;
 
   return (
-    <section className="relative w-full bg-[#1f0d3f] pb-12 md:pb-0 pt-8 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative w-full bg-[#1f0d3f] pb-12 lg:pb-0 pt-8 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Grid Background */}
       <div
         className={cn(
@@ -66,7 +66,7 @@ const TradingPageCTA: React.FC<TradingPageCTAProps> = ({
         {/* Left Content */}
         <div className="text-white text-center md:text-left flex flex-col items-center md:items-start">
           <motion.h2
-            className="font-secondary text-2xl sm:text-[40px] font-bold leading-tight"
+            className="font-secondary text-2xl sm:text-[32px] font-bold leading-tight"
             variants={textVariant}
             initial="hidden"
             whileInView="visible"

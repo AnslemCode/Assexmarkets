@@ -1,4 +1,3 @@
-import MobileMenu from "@/components/MobileMenu";
 import AccountTypes from "@/sections/AccountTypes";
 import CallToAction from "@/sections/CallToAction";
 import { CardScrollSection } from "@/sections/CardScroll";
@@ -14,7 +13,6 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <MobileMenu />
       <Hero />
       <Features />
       <Feature />

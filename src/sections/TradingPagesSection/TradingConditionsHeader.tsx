@@ -62,7 +62,7 @@ const TradingHeaderSection: React.FC<TradingHeaderSectionProps> = ({
       >
         <motion.h1
           variants={itemVariants}
-          className="font-secondary text-3xl sm:text-4xl md:text-5xl font-bold text-[#1F0d3F] leading-tight"
+          className="font-secondary text-[32px]  font-bold text-[#1F0d3F] leading-tight"
         >
           {title}
         </motion.h1>

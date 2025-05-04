@@ -35,10 +35,10 @@ const AccountTypes = () => {
           custom={0}
         >
           <Badge text="Account Types" />
-          <h2 className="font-secondary text-3xl sm:text-4xl font-bold text-[#1f0e3f]">
+          <h2 className="font-secondary text-[32px] font-bold text-[#1f0e3f]">
             Simple and Trustworthy
           </h2>
-          <p className="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-8">
+          <p className="text-base sm:text-lg leading-relaxed sm:leading-8">
             Choose the Right Account for Your Trading Style.
             <br /> From beginner-friendly options to pro-level execution, we
             offer accounts tailored to every level of trader.

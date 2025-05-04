@@ -11,7 +11,7 @@ export function RazorFeatureSection() {
         <div className="flex flex-col lg:flex-row justify-center items-stretch gap-6 md:gap-8">
           <Card
             title="Razor Thin Spread"
-            icon={<TrendingUp className="w-10 h-10 text-emerald-600" />}
+            icon={<TrendingUp className="w-10 h-10 text-[#1f0d3f]" />}
           >
             <CanvasRevealEffect
               animationSpeed={5.1}
@@ -21,7 +21,7 @@ export function RazorFeatureSection() {
 
           <Card
             title="Lightning Fast Execution"
-            icon={<Rocket className="w-10 h-10 text-indigo-600" />}
+            icon={<Rocket className="w-10 h-10 text-[#1f0d3f]" />}
           >
             <CanvasRevealEffect
               animationSpeed={4}
@@ -32,12 +32,12 @@ export function RazorFeatureSection() {
               ]}
               dotSize={2}
             />
-            <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+            <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90 rounded-2xl" />
           </Card>
 
           <Card
             title="The Power of MT5"
-            icon={<MonitorSmartphone className="w-10 h-10 text-cyan-600" />}
+            icon={<MonitorSmartphone className="w-10 h-10 text-[#1f0d3f]" />}
           >
             <CanvasRevealEffect
               animationSpeed={3}
@@ -66,12 +66,12 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center  max-w-sm w-full mx-auto p-6 relative h-[28rem] bg-white "
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto p-6 relative h-[20rem] bg-white rounded-2xl shadow-md"
     >
-      <Icon className="absolute h-5 w-5 -top-2 -left-2  " />
+      {/* <Icon className="absolute h-5 w-5 -top-2 -left-2  " />
       <Icon className="absolute h-5 w-5 -bottom-2 -left-2 " />
       <Icon className="absolute h-5 w-5 -top-2 -right-2 " />
-      <Icon className="absolute h-5 w-5 -bottom-2 -right-2 " />
+      <Icon className="absolute h-5 w-5 -bottom-2 -right-2 " /> */}
 
       <AnimatePresence>
         {hovered && (
@@ -86,7 +86,7 @@ const Card = ({
       </AnimatePresence>
 
       {/* Content */}
-      <div className="relative z-20 text-center">
+      <div className="relative z-10 text-center flex flex-col items-center justify-center h-full">
         <div className="mb-4 transition duration-300 flex items-center justify-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 ">
           {icon}
         </div>
@@ -137,16 +137,16 @@ function getCardText(title: string) {
 // );
 
 // === Corner Icon ===
-const Icon = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth="1.5"
-    stroke="currentColor"
-    className={className}
-    {...rest}
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-  </svg>
-);
+// const Icon = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     fill="none"
+//     viewBox="0 0 24 24"
+//     strokeWidth="1.5"
+//     stroke="currentColor"
+//     className={className}
+//     {...rest}
+//   >
+//     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+//   </svg>
+// );

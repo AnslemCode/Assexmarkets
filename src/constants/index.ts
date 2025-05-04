@@ -43,7 +43,7 @@ const testimonials = [
 const navigationLinks = [
   {
     id: 1,
-    href: "/live-account-trading",
+    // href: "/live-account-trading",
     text: "Trading",
     dropdown: true,
     dropdownLinks: [
@@ -66,12 +66,35 @@ const navigationLinks = [
         text: "Trading Contest",
         dropdown: false,
       },
-      { id: 5, href: "/paam", text: "PAMM", dropdown: false },
+      {
+        id: 5,
+        href: "/paam",
+        text: "Percentage Allocation Asset Management (PAMM)",
+        dropdown: false,
+      },
+      {
+        id: 6,
+        href: "/deposit-and-withdrawals",
+        text: "Deposit and Withdrawals",
+        dropdown: false,
+      },
+      {
+        id: 7,
+        href: "/fees",
+        text: "Fees",
+        dropdown: false,
+      },
+      {
+        id: 8,
+        href: "/client-protection",
+        text: "Client Protection",
+        dropdown: false,
+      },
     ],
   },
   {
     id: 2,
-    href: "/forex-cfd",
+    // href: "/forex-cfd",
     text: "Markets",
     dropdown: true,
     dropdownLinks: [
@@ -84,24 +107,49 @@ const navigationLinks = [
   },
   {
     id: 3,
-    href: "/about-us",
-    text: "Company",
+    // href: "",
+    text: "Platform",
     dropdown: true,
     dropdownLinks: [
-      { id: 1, href: "/about-us", text: "About Us", dropdown: false },
-      { id: 2, href: "/careers", text: "Careers", dropdown: false },
+      { id: 1, href: "/metatrader5", text: "MetaTrader5", dropdown: false },
     ],
   },
   {
     id: 4,
-    href: "/contact-form",
-    text: "Contact Us",
+    // href: "/forex-cfd",
+    text: "Account Types",
     dropdown: true,
     dropdownLinks: [
-      { id: 1, href: "/contact-form", text: "Contact Form", dropdown: false },
-      { id: 2, href: "/support", text: "Support", dropdown: false },
+      { id: 1, href: "/standard", text: "Standard", dropdown: false },
+      { id: 2, href: "/leverage-plus", text: "Leverage Plus", dropdown: false },
+      { id: 3, href: "/raw-spread", text: "Raw Spread", dropdown: false },
     ],
   },
+  // {
+  // id: 5,
+  // href: "/about-us",
+  // text: "Company",
+  // dropdown: false,
+  // dropdownLinks: [
+  //   { id: 1, href: "/about-us", text: "About Us", dropdown: false },
+  //   { id: 2, href: "/careers", text: "Careers", dropdown: false },
+  // ],
+  // },
+  // {
+  // id: 6,
+  // href: "/contact-form",
+  // text: "Contact Us",
+  // dropdown: false,
+  // dropdownLinks: [
+  //   { id: 1, href: "/contact-form", text: "Contact Form", dropdown: false },
+  //   { id: 2, href: "/support", text: "Support", dropdown: false },
+  // ],
+  // },
 ];
 
-export { testimonials, navigationLinks };
+const staticLinks = [
+  { href: "/about-us", text: "Company" },
+  { href: "/contact-us", text: "Contact Us" },
+];
+
+export { testimonials, navigationLinks, staticLinks };

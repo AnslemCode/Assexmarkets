@@ -37,7 +37,7 @@ const CopyTradingAccountTypes = () => {
           custom={0}
         >
           <Badge text="Copy Trading Accounts" />
-          <h2 className="font-secondary text-[40px] font-bold text-[#1f0e3f]">
+          <h2 className="font-secondary text-[32px] font-bold text-[#1f0e3f]">
             Built for Performance and Precision
           </h2>
           <p className="text-xl leading-8">
@@ -76,7 +76,8 @@ const CopyTradingAccountTypes = () => {
                       variant="primary"
                       text="Become a Follower"
                       icon={<WhiteFlameButtonIcon />}
-                      size="lg"
+                      size="md"
+                      fullWidth
                       onClick={() => console.log("Custom button clicked")}
                     />
                   }
@@ -100,7 +101,8 @@ const CopyTradingAccountTypes = () => {
                       variant="primary"
                       text="Become a Strategy Provider"
                       icon={<WhiteFlameButtonIcon />}
-                      size="lg"
+                      size="md"
+                      fullWidth
                       onClick={() => console.log("Custom button clicked")}
                     />
                   }

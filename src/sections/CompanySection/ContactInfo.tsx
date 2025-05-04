@@ -9,7 +9,7 @@ const ContactInfo = () => {
           {/* Left Column */}
           <div className="space-y-6 max-w-[530px] text-center lg:text-left mx-auto lg:mx-0">
             <Badge text="Contact Info" />
-            <p className="text-3xl sm:text-4xl font-bold text-[#0dae94] leading-snug">
+            <p className="font-secondary text-2xl lg:text-[32px] font-bold text-[#0dae94] leading-snug">
               We are always happy to assist you
             </p>
           </div>

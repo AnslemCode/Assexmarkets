@@ -24,7 +24,7 @@ const ReusableBenefitsSection = ({
       <div className="max-w-7xl mx-auto bg-[#1DA1F2]/10 rounded-[40px] px-6 sm:px-10 md:px-[50px] pt-[40px] md:pt-[55px] pb-[30px] md:pb-[45px]">
         {/* Title */}
         <motion.h1
-          className="text-[#1F0d3F] text-center font-bold text-2xl sm:text-3xl md:text-4xl max-w-3xl mx-auto leading-tight md:leading-[65px]"
+          className="text-[#1F0d3F] text-center font-bold text-2xl sm:text-[32px] max-w-3xl mx-auto leading-snug sm:leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

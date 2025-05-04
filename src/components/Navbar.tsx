@@ -16,7 +16,7 @@ export function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Trading">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 text-sm">
             <div className="badge-section">
-              <div className="badge">Accounts</div>
+              <div className="badge">Trading</div>
               <div className="flex flex-col space-y-2">
                 <HoveredLink href="/live-account-trading">
                   Live Account Trading
@@ -70,8 +70,8 @@ export function Navbar({ className }: { className?: string }) {
             <ProductItem
               title="MetaTrader5"
               href="/metatrader5"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Demo, Professional, Standard, and Portfolio Management Trading Accounts"
+              src="/images/MetaTraderMobile.png"
+              description="Enjoy added features including depth of market, advanced trading tools and improved charting capabilities"
             />
             {/* <ProductItem
               title="MetaTrader4"

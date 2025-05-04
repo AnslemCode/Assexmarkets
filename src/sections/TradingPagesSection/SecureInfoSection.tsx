@@ -43,7 +43,7 @@ const SecureInfoSection: React.FC<SecureInfoSectionProps> = ({
             viewport={{ once: true }}
             variants={fadeUp}
             custom={0}
-            className="font-secondary text-4xl font-bold text-[#0dae94]"
+            className="font-secondary text-[32px] font-bold text-[#0dae94]"
           >
             {title}
           </motion.h2>
@@ -101,7 +101,7 @@ const SecureInfoSection: React.FC<SecureInfoSectionProps> = ({
           className="flex flex-col items-center justify-center text-center mt-10 md:mt-0"
         >
           <div className="w-full max-w-full">{rightImage}</div>
-          <p className="max-w-[507px] font-secondary font-medium text-[#191a15] text-3xl mt-[50px] md:mt-[89px]">
+          <p className="max-w-[507px] font-secondary font-medium text-[#191a15] text-[32px] mt-[50px] md:mt-[89px]">
             {rightText}
           </p>
         </motion.div>

@@ -54,7 +54,7 @@ export const PlanCard: React.FC<PlanCardProps> = ({
               text="Register"
               icon={WhiteFlameButtonIcon()}
               size="md"
-              fullWidth
+              // fullWidth
             />
           )}
         </div>

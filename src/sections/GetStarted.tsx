@@ -53,7 +53,7 @@ export function StepsSection() {
           className="flex flex-col lg:flex-row justify-between items-center gap-8"
         >
           <div className="flex-1 space-y-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1f0e3f] font-secondary">
+            <h2 className="text-[32px] font-bold text-[#1f0e3f] font-secondary">
               Register in 5 minutes with these 3 easy steps
             </h2>
             <p className="text-base sm:text-lg text-[#3F4550]">
@@ -88,7 +88,7 @@ export function StepsSection() {
                 />
               </div>
               <h3 className="font-secondary font-bold text-xl text-[#1f0e3f] mb-2">
-                Step {index + 1}: {step.title}
+                {step.title}
               </h3>
               <p className="text-sm text-[#3F4550]">{step.description}</p>
             </motion.div>

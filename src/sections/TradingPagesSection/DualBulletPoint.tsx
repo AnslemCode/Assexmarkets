@@ -54,7 +54,7 @@ export const DualBulletPointSection: React.FC<DualBulletPointSectionProps> = ({
       viewport={{ once: true, amount: 0.2 }}
       variants={animationVariants}
     >
-      <h2 className="font-secondary text-2xl md:text-4xl font-bold text-[#0dae94]">
+      <h2 className="font-secondary text-2xl md:text-[32px] font-bold text-[#0dae94]">
         {section.sectionTitle}
       </h2>
       <p className="mt-4 text-base md:text-lg leading-7">
@@ -94,7 +94,7 @@ export const DualBulletPointSection: React.FC<DualBulletPointSectionProps> = ({
       <div className="max-w-7xl mx-auto">
         {generalTitle && (
           <motion.h1
-            className="font-secondary text-3xl md:text-4xl font-bold text-center text-[#0dae94]"
+            className="font-secondary text-[32px] font-bold text-center text-[#0dae94]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

@@ -22,7 +22,7 @@ const IndicesWhyAssexMarket = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="font-secondary font-bold text-3xl sm:text-4xl md:text-5xl text-[#191A15] mt-6 text-center"
+          className="font-secondary font-bold text-[32px] text-[#191A15] mt-6 text-center"
         >
           Why trade indices with Assexmarkets
         </motion.h2>

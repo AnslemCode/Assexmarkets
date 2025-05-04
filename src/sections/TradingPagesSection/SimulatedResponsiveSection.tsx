@@ -12,7 +12,7 @@ const SimulatedResponsiveSection = () => {
         <Badge text="Responsiveness" />
 
         <motion.h1
-          className="font-secondary font-bold text-[32px] sm:text-[40px] text-[#191A15] mt-6 leading-tight"
+          className="font-secondary font-bold text-[32px] text-[#191A15] mt-6 leading-tight"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

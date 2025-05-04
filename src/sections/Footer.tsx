@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import {
   DribbleIcon,
@@ -10,32 +11,55 @@ const footerLinks = [
   {
     title: "Accounts",
     links: [
-      "Live Trading Accounts",
-      "Simulated Trading Accounts",
-      "Copy Trading",
-      "Trading Contest",
-      "Portfolio Management Account",
+      { name: "Live Trading Accounts", href: "/live-account-trading" },
+      {
+        name: "Simulated Trading Accounts",
+        href: "/simulated-account-trading",
+      },
+      { name: "Copy Trading", href: "/copy-trading" },
+      { name: "Trading Contest", href: "/trading-contest" },
+      { name: "Percentage Allocation Asset Management (PAMM)", href: "/paam" },
     ],
   },
   {
     title: "Conditions",
-    links: ["Deposit & Withdrawals", "Fees", "Client Protection"],
+    links: [
+      { name: "Deposit & Withdrawals", href: "/deposit-withdrawals" },
+      { name: "Fees", href: "/fees" },
+      { name: "Client Protection", href: "/client-protection" },
+    ],
   },
   {
     title: "Markets",
-    links: ["Forex CFO", "Crypto CFO", "Indices", "Metals", "Commodities CFO"],
+    links: [
+      { name: "Forex CFO", href: "/forex-cfo" },
+      { name: "Crypto CFO", href: "/crypto-cfo" },
+      { name: "Indices", href: "/indices" },
+      { name: "Metals", href: "/metals" },
+      { name: "Commodities CFO", href: "/commodities-cfo" },
+    ],
   },
   {
     title: "Platform",
-    links: ["Metatrader 5"],
+    links: [{ name: "Metatrader 5", href: "/metatrader-5" }],
   },
   {
     title: "Company",
-    links: ["About Us", "Why AssexMarkets?", "Contact Us", "Help Center"],
+    links: [
+      { name: "About Us", href: "/about-us" },
+      { name: "Why AssexMarkets?", href: "/why-assexmarkets" },
+      { name: "Contact Us", href: "/contact-us" },
+      { name: "Help Center", href: "/help-center" },
+    ],
   },
   {
     title: "Others",
-    links: ["FAQ", "User Agreement", "Imprint Risk Disclosure"],
+    links: [
+      { name: "Trading Calculator", href: "/trading-calculator" },
+      { name: "Currency Converter", href: "/currency-converter" },
+      { name: "User Agreement", href: "/user-agreement" },
+      { name: "Imprint Risk Disclosure", href: "/risk-disclosure" },
+    ],
   },
 ];
 
@@ -44,17 +68,20 @@ const Footer = () => {
     <footer className="bg-[#00CCB1]/12 py-16 px-4 sm:px-6 text-sm">
       <div className="max-w-7xl mx-auto w-full">
         {/* Logo */}
-        <div className="mb-10">
-          <Image
-            src="/images/logo.svg"
-            alt="Assexmarkets Logo"
-            width={64}
-            height={38}
-          />
+        <div>
+          <Link href="/">
+            <Image
+              src="/images/logo.svg"
+              alt="Assexmarkets Logo"
+              width={64}
+              height={38}
+              className="cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Link Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-10">
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-10">
           {footerLinks.map((section) => (
             <div key={section.title} className="min-w-[140px]">
               <h4 className="font-medium mb-4 text-[#191a45]">
@@ -62,12 +89,14 @@ const Footer = () => {
               </h4>
               <ul className="space-y-3">
                 {section.links.map((link, idx) => (
-                  <li
-                    key={idx}
-                    className="hover:font-semibold cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap"
-                    title={link}
-                  >
-                    {link}
+                  <li key={idx}>
+                    <Link
+                      href={link.href}
+                      className="block hover:font-semibold text-ellipsis overflow-hidden whitespace-nowrap"
+                      title={link.name}
+                    >
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -87,12 +116,18 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
             {/* Legal Links */}
             <div className="flex gap-3 flex-wrap justify-center sm:justify-start">
-              <span className="hover:font-semibold cursor-pointer whitespace-nowrap">
+              <Link
+                href="/terms"
+                className="hover:font-semibold whitespace-nowrap"
+              >
                 Terms & Conditions
-              </span>
-              <span className="hover:font-semibold cursor-pointer whitespace-nowrap">
+              </Link>
+              <Link
+                href="/privacy"
+                className="hover:font-semibold whitespace-nowrap"
+              >
                 Privacy Policy
-              </span>
+              </Link>
             </div>
 
             {/* Social Icons */}

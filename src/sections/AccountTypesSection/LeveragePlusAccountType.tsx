@@ -32,10 +32,10 @@ const LeveragePlusAccountType = () => {
           custom={0}
         >
           <Badge text="Leverage Plus Account" />
-          <h2 className="font-secondary text-[40px] font-bold text-[#1f0e3f]">
+          <h2 className="font-secondary text-[32px] font-bold text-[#1f0e3f]">
             Maximum Power with Leverage Plus
           </h2>
-          <p className="text-xl leading-8">
+          <p className="text-lg leading-8">
             Designed for high-impact trading—access ultra-high leverage and raw
             pricing with speed and precision.
           </p>

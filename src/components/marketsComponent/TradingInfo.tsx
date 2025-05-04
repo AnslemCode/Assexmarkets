@@ -28,7 +28,7 @@ const TradingInfoSection: React.FC<TradingInfoSectionProps> = ({
     <section className="mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <Badge text={badgeText} />
-        <h2 className="font-secondary font-bold text-3xl sm:text-4xl text-[#191A15] mt-6">
+        <h2 className="font-secondary font-bold text-[32px] text-[#191A15] mt-6">
           {title}
         </h2>
         <p className="text-base sm:text-lg mt-4 leading-relaxed text-[#4B5563] max-w-3xl mx-auto whitespace-pre-line">

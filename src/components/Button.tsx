@@ -24,7 +24,7 @@ const Button: React.FC<CustomButtonProps> = ({
   fullWidth = false, // 👈
 }) => {
   const baseStyles =
-    "font-secondary inline-flex items-center justify-center gap-2 rounded-full transition-all duration-200 ease-in-out shadow-md hover:shadow-lg active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0dae94]";
+    "font-secondary inline-flex items-center justify-center gap-2 rounded-full transition-all duration-200 ease-in-out shadow-lg hover:shadow-xl active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0dae94] whitespace-nowrap";
 
   const variantStyles = {
     primary: "bg-[#0dae94] text-white hover:bg-[#0ca88d]",

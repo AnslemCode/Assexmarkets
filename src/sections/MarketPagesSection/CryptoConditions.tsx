@@ -5,7 +5,7 @@ const CryptoConditions = () => {
   return (
     <DualBulletPointSection
       generalTitle="Crypto Market Conditions"
-      generalDescription="The forex market is the largest financial market in the world. With over $5.5 trillion in daily trading volume, currency pair trading presents endless opportunities 24 hours a day, 5 days a week."
+      generalDescription="The crypto market is a digital currency market that uses blockchain technology to create new coins and provide users with secure transactions. Trading crypto derivatives allows you to diversify your online portfolio and capitalize on the movements of cryptocurrency prices, whether they’re rising or falling."
       leftSections={[
         {
           sectionTitle: "",

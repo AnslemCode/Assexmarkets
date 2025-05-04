@@ -21,7 +21,7 @@ const ImageLeftBenefitsSection = ({
     <section className="mt-30">
       <div className="max-w-7xl mx-auto rounded-[40px] bg-[#1DA1F2]/5 px-6 sm:px-12 py-8 lg:py-12">
         {/* Title */}
-        <h2 className="text-[#1F0D3F] text-center font-bold text-3xl md:text-4xl leading-tight max-w-4xl mx-auto">
+        <h2 className="text-[#1F0D3F] text-center font-bold text-[32px] leading-tight max-w-4xl mx-auto">
           {title}
         </h2>
 

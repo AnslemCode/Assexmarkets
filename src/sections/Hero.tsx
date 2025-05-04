@@ -8,7 +8,6 @@ import {
   VideoButtonIcon,
   WhiteFlameButtonIcon,
 } from "../../public/icons/ButtonIcons";
-import { Spotlight } from "@/components/ui/Spotlight";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/star-background";
 import { FlipWords } from "@/components/ui/flip-words";
@@ -23,11 +22,6 @@ const Hero = () => {
       key={pathname}
       className="relative min-h-fit bg-[#00CCB1]/3 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[120px] md:pt-[160px] lg:pt-[180px]"
     >
-      {/* Background Effects */}
-      <Spotlight
-        className="-top-40 left-0 md:-top-20 md:left-60"
-        fill="white"
-      />
       <ShootingStars />
       <StarsBackground />
 

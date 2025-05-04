@@ -17,7 +17,7 @@ const InputField = ({
   name: string;
 }) => (
   <div className="relative w-full">
-    <Icon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+    <Icon className="absolute left-3 top-1/2 -translate-y-1/2" />
     <input
       id={name}
       name={name}
@@ -45,7 +45,7 @@ const ContactUsForm = () => {
           className="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12 space-y-10 border border-stone-100"
         >
           <div className="text-center">
-            <h2 className="font-secondary text-2xl sm:text-3xl font-bold text-[#1f0d3f]">
+            <h2 className="font-secondary text-2xl sm:text-[32px] font-bold text-[#1f0d3f]">
               Contact Us
             </h2>
             <p className="font-secondary mt-2 text-[#0dae94] text-base sm:text-lg">
@@ -68,7 +68,7 @@ const ContactUsForm = () => {
 
             {/* Message Field */}
             <div className="relative w-full">
-              <MessageCircle className="absolute left-3 top-4 text-gray-400" />
+              <MessageCircle className="absolute left-3 top-4" />
               <textarea
                 id="message"
                 name="message"

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import React from "react";
 import Image from "next/image";
+import React from "react";
 
 const aboutSections = [
   {
@@ -28,9 +28,7 @@ Our goal is not just to facilitate trades — but to build a platform where trad
   },
   {
     title: "Trust and Transparency",
-    text: `We are committed to providing a secure and transparent trading environment. While AssexMarkets is an independent brokerage, we take steps to ensure the protection of client funds and the integrity of trading activities.
-
-We encourage all traders to exercise due diligence and trade responsibly.`,
+    text: `We are committed to providing a secure and transparent trading environment. While AssexMarkets is an independent brokerage, we take steps to ensure the protection of client funds and the integrity of trading activities. We encourage all traders to exercise due diligence and trade responsibly.`,
     image: "/images/handshake.png",
     imageWidth: 280,
     imageHeight: 256,
@@ -42,44 +40,54 @@ const AboutUsSection = () => {
   return (
     <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto space-y-24">
-        {aboutSections.map((section, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            className={`flex flex-col-reverse items-center gap-12 md:gap-20 lg:flex-row ${
-              section.reverse ? "lg:flex-row-reverse" : ""
-            }`}
-          >
-            {/* Text */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0dae94] mb-4">
-                {section.title}
-              </h2>
-              <p className="text-gray-700 whitespace-pre-line text-base sm:text-lg leading-relaxed">
-                {section.text}
-              </p>
-            </div>
+        {aboutSections.map((section, index) => {
+          // const aspectRatio = section.imageWidth / section.imageHeight;
 
-            {/* Image */}
-            {/* Image Section */}
-            <div className="w-full lg:w-1/2">
-              <div className="w-full max-w-[480px] mx-auto">
+          return (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className={`max-w-6xl mx-auto flex flex-col-reverse items-center gap-12 md:gap-20 lg:flex-row lg:justify-between ${
+                section.reverse ? "lg:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Text Section */}
+              <div
+                className={`w-full lg:w-1/2 ${
+                  section.reverse
+                    ? "text-center lg:text-right"
+                    : "text-center lg:text-left"
+                }`}
+              >
+                <h2 className="text-[28px] md:text-[32px] font-bold text-[#0dae94] mb-4 leading-tight">
+                  {section.title}
+                </h2>
+                <p className="whitespace-pre-line text-base sm:text-lg leading-relaxed">
+                  {section.text}
+                </p>
+              </div>
+
+              {/* Image Section */}
+              <div
+                className={`w-full lg:w-1/2 flex justify-center lg:${
+                  section.reverse ? "justify-start" : "justify-end"
+                }`}
+              >
                 <Image
                   src={section.image}
                   alt={section.title}
-                  width={800}
-                  height={500}
-                  layout="responsive"
-                  className="rounded-xl object-cover"
+                  width={section.imageWidth}
+                  height={section.imageHeight}
+                  className="rounded-xl object-contain"
                   priority
                 />
               </div>
-            </div>
-          </motion.div>
-        ))}
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );

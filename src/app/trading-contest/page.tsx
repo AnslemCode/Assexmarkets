@@ -9,24 +9,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "How can I earn from holding coins?",
+    question: "Who can participate in the Trading Contest?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Anyone with an eligible trading account on AssexMarkets can join the Trading Contest, subject to the specific rules and terms outlined for each contest.",
   },
   {
-    question: "What are stablecoins?",
+    question: "How do I join the contest?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Simply register for the contest via your dashboard or the Trading Contest page and ensure your account meets the entry requirements.",
   },
   {
-    question: "Can I convert crypto to cash?",
+    question: "What type of account do I need to participate?",
     answer:
-      "Yes. You can convert your crypto to fiat currency through exchanges or peer-to-peer platforms and withdraw to your bank account.",
+      "Typically, a live trading account is required. Specific contests may allow demo accounts; check the contest rules for details.",
   },
   {
-    question: "What's the best time to trade crypto?",
+    question: "Is there a registration fee?",
     answer:
-      "Crypto markets are open 24/7. Many traders watch for volume and volatility, often trading during high-activity times like US or Asian market hours.",
+      "Most contests are free to join, but some premium contests may charge a nominal entry fee. Always review the contest terms before registering.",
   },
 ];
 const StandardTradingAccountPage = () => {

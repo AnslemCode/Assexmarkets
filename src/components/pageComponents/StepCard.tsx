@@ -21,7 +21,7 @@ const StepCard: React.FC<StepCardProps> = ({ stepNumber, children }) => {
       <span className="text-[64px] md:text-[80px] leading-none text-[#E5E7EB] font-bold">
         {stepNumber}
       </span>
-      <div className="mt-4 text-base md:text-lg font-medium text-[#676D79]">
+      <div className="mt-4 text-sm sm:text-base md:text-lg font-medium text-[#676D79]">
         {children}
       </div>
     </motion.div>

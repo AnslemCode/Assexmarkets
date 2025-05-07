@@ -82,12 +82,12 @@ const InputField = ({
 const TradingCalculatorForm = () => {
   return (
     <section className="px-4 py-16">
-      <div className="max-w-4xl mx-auto bg-[#1DA1F2]/2">
+      <div className="max-w-6xl mx-auto bg-[#1DA1F2]/2">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="bg-white rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12 space-y-10 border border-stone-100"
+          className="rounded-2xl shadow-xl p-6 sm:p-10 lg:p-12 space-y-10 border border-stone-100"
         >
           <div className="text-center">
             <h2 className="font-secondary text-2xl sm:text-[32px] font-bold text-[#1f0d3f]">

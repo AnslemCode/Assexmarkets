@@ -33,17 +33,17 @@ const SecureInfoSection: React.FC<SecureInfoSectionProps> = ({
   rightText,
 }) => {
   return (
-    <section className="mt-20 px-4 sm:px-6 lg:px-8">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-[14px]">
         {/* Left Side */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 md:text-left">
           <motion.h2
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
             custom={0}
-            className="font-secondary text-[32px] font-bold text-[#0dae94]"
+            className="font-secondary text-center md:text-left text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#0dae94]"
           >
             {title}
           </motion.h2>
@@ -54,7 +54,7 @@ const SecureInfoSection: React.FC<SecureInfoSectionProps> = ({
             viewport={{ once: true }}
             variants={fadeUp}
             custom={1}
-            className="mt-4 text-lg leading-6 text-[#191A15] max-w-xl"
+            className="mt-4 text-center md:text-left text-sm sm:text-base md:text-lg leading-relaxed text-[#191A15] max-w-xl"
           >
             {text}
           </motion.p>
@@ -81,10 +81,12 @@ const SecureInfoSection: React.FC<SecureInfoSectionProps> = ({
                       <TickIcon />
                     </div>
                     <div>
-                      <div className="text-[22px] text-[#1f0d3f] font-semibold">
+                      <div className="text-base md:text-lg text-[#1f0d3f] font-semibold">
                         {point.title}
                       </div>
-                      <p className="text-lg mt-2">{point.description}</p>
+                      <p className="text-sm md:text-base leading-relaxed mt-2">
+                        {point.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -101,7 +103,7 @@ const SecureInfoSection: React.FC<SecureInfoSectionProps> = ({
           className="flex flex-col items-center justify-center text-center mt-10 md:mt-0"
         >
           <div className="w-full max-w-full">{rightImage}</div>
-          <p className="max-w-[507px] font-secondary font-medium text-[#191a15] text-[32px] mt-[50px] md:mt-[89px]">
+          <p className="max-w-[507px] font-secondary font-medium text-[#191a15] text-base sm:text-xl md:text-2xl mt-12 md:mt-22">
             {rightText}
           </p>
         </motion.div>

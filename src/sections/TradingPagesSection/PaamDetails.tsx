@@ -10,10 +10,10 @@ const PaamDetails = () => {
   };
 
   return (
-    <section>
+    <section className="">
       <div className="max-w-6xl mx-auto">
         <ImageWithTextSection
-          title="Are you a Skillful Trader? Become a Fund Manager"
+          title={`Are you a Skillful Trader?\n Become a Fund Manager`}
           description="Your trading results are transparently displayed on our website, backed by robust manager security, full control over your account, and seamless automation that ensures all strategies and trade orders are accurately and instantly mirrored to your account for a reliable and hands-free trading experience."
           buttonText="Open PAAM Account"
           buttonOnClick={handleOpen}
@@ -48,7 +48,7 @@ const PaamDetails = () => {
         />
 
         <ImageWithTextSection
-          title="Get a Piece of the PAMM Pie Benefits for Partners and Managers"
+          title={`Get a Piece of the PAMM Pie \nBenefits for Partners and Managers`}
           description="At AssexMarkets, our PAAM system is built on strategic partnerships that drive shared success. Through this model, partners can maximize the value of their existing client base, turning relationships into lasting returns. At the same time, asset managers gain greater reach and exposure, connecting with a wider pool of investors who are ready to follow proven strategies."
           buttonText="Open PAAM Account"
           buttonOnClick={handleOpen}

@@ -29,13 +29,15 @@ const PlatformInfoCard: React.FC<PlatformInfoCardProps> = ({
       transition={{ duration: 0.6, delay: index * 0.2 }}
       viewport={{ once: true }}
     >
-      <h3 className="text-xl sm:text-2xl font-bold text-[#191A15]">{title}</h3>
-      <p className="text-base sm:text-lg mt-4 text-[#4B4B4B] max-w-xs mx-auto leading-relaxed">
+      <h3 className="text-base sm:text-xl md:text-2xl font-bold text-[#191A15]">
+        {title}
+      </h3>
+      <p className="text-sm sm:text-base md:text-lg  mt-4 text-[#4B4B4B] max-w-xs mx-auto leading-relaxed">
         {description}
       </p>
 
       <motion.div
-        className="mt-10"
+        className="mt-30 lg:mt-10"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}

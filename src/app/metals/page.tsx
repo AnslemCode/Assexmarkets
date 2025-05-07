@@ -10,24 +10,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What metals can I trade on AssexMarkets?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "You can trade gold, silver, platinum, and palladium on AssexMarkets with real-time pricing and tight spreads.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What are the trading hours for metals?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Metals trading is generally open 23 hours a day from Monday to Friday. Specific hours may vary slightly by instrument and platform.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "What are the typical spreads for metals?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Spreads on metals depend on the market and account type, with Raw Spread accounts offering tighter spreads. Check our instrument specifications for more.",
   },
   {
-    question: "What are stablecoins?",
+    question: "How do economic events affect metals prices?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Metals prices can react strongly to inflation data, central bank decisions, and geopolitical tensions, often rising during uncertainty as safe-haven assets.",
   },
 ];
 const MetalsPage = () => {

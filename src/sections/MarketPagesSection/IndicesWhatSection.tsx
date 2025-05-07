@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const IndicesWhatSection = () => {
   return (
-    <section className="mt-30 px-6">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 max-w-7xl mx-auto">
+    <section className="section-padding">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 max-w-7xl mx-auto">
         {/* Left: Text */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -16,10 +16,10 @@ const IndicesWhatSection = () => {
           viewport={{ once: true }}
           className="w-full max-w-[600px]"
         >
-          <h2 className="font-secondary text-[32px] font-bold text-[#0dae94] ">
+          <h2 className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#0dae94] text-center md:text-left">
             What is Indices Trading
           </h2>
-          <p className="mt-4 md:text-lg leading-[28px] whitespace-pre-line text-[#3F4550]">
+          <p className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed whitespace-pre-line text-[#3F4550] text-center md:text-left">
             Indices trading refers to buying and selling financial instruments
             that track the performance of a group of stocks or other financial
             assets, rather than individual securities.

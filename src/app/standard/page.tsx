@@ -8,24 +8,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What instruments can I trade on the Cent account?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "You can trade forex pairs, metals, and some CFDs on the Cent account with smaller lot sizes ideal for new traders.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What are the advantages of the Cent account in forex?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Cent accounts allow you to trade with micro-lots, minimizing risk while gaining real-market experience with live trading conditions.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "On what platform is Cent account available?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "The Cent account is available on MetaTrader 5, providing access to a full suite of trading tools and technical analysis features.",
   },
   {
-    question: "What are stablecoins?",
+    question: "What is the minimum deposit for the Cent account?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "The minimum deposit is low—usually around $10—making it perfect for beginners or those who want to test strategies with minimal risk.",
   },
 ];
 

@@ -11,24 +11,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "How do I download MetaTrader 5?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "You can download MetaTrader 5 directly from the AssexMarkets website or from the official MetaTrader site for desktop and mobile devices.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "Can I open a demo account on MetaTrader 5?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Yes, MetaTrader 5 allows you to open a demo account to practice trading with real market conditions using virtual funds.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "What are the system requirements for MetaTrader 5?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "MetaTrader 5 runs on Windows, macOS, iOS, and Android. It requires minimal hardware, with internet access and a basic CPU for optimal performance.",
   },
   {
-    question: "What are stablecoins?",
+    question: "What trade execution modes does MetaTrader 5 support?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "MetaTrader 5 supports multiple execution modes including Instant, Market, and Request execution, allowing flexible trading strategies.",
   },
 ];
 const MetaTrader5Page = () => {

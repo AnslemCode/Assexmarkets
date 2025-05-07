@@ -10,24 +10,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "Is crypto trading volatile?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "Yes, cryptocurrency markets are highly volatile, offering significant profit opportunities but also greater risk. Always manage risk carefully.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What is a cryptocurrency pair?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "A crypto pair is a trading pair like BTC/USD or ETH/USDT where one cryptocurrency is traded against another asset or fiat currency.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "How much do I need to start trading crypto?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "You can begin trading crypto with a small amount like $10. Choose a position size that fits your risk profile and trading goals.",
   },
   {
-    question: "What are stablecoins?",
+    question: "What is the best cryptocurrency to trade?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Popular choices include Bitcoin (BTC), Ethereum (ETH), and Litecoin (LTC), but the best crypto to trade depends on your strategy and market analysis.",
   },
 ];
 

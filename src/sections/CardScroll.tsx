@@ -5,7 +5,7 @@ import React from "react";
 
 export function CardScrollSection() {
   return (
-    <section className="my-30 relative overflow-hidden">
+    <section className="section-padding relative overflow-hidden">
       <InfiniteMovingCards items={cardItems} direction="left" speed="slow" />
     </section>
   );

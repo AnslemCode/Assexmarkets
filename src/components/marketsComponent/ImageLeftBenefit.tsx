@@ -18,10 +18,10 @@ const ImageLeftBenefitsSection = ({
   leftContent,
 }: ImageLeftBenefitsProps) => {
   return (
-    <section className="mt-30">
-      <div className="max-w-7xl mx-auto rounded-[40px] bg-[#1DA1F2]/5 px-6 sm:px-12 py-8 lg:py-12">
+    <section className="mt-20 lg:mt-30">
+      <div className="max-w-7xl mx-auto rounded-[40px] bg-[#1DA1F2]/5 py-8 lg:py-12">
         {/* Title */}
-        <h2 className="text-[#1F0D3F] text-center font-bold text-[32px] leading-tight max-w-4xl mx-auto">
+        <h2 className="text-[#1F0D3F] text-center font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] leading-tight max-w-4xl mx-auto">
           {title}
         </h2>
 
@@ -33,17 +33,17 @@ const ImageLeftBenefitsSection = ({
           </div>
 
           {/* Right Benefits List */}
-          <div className="w-full lg:w-[60%] flex flex-col gap-8">
+          <div className="w-full lg:w-[60%] flex flex-col gap-8 p-4">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-start gap-6">
                 <div className="min-w-[60px] min-h-[60px] bg-white rounded-xl flex items-center justify-center shadow-lg">
                   {benefit.icon}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#1F0D3F]">
+                  <h3 className="text-base sm:text-lg font-semibold text-[#1F0D3F]">
                     {benefit.title}
                   </h3>
-                  <p className="text-[#4a4a4a] mt-2 leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#4a4a4a] mt-2 leading-relaxed">
                     {benefit.subtext}
                   </p>
                 </div>

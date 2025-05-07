@@ -19,13 +19,13 @@ const steps = [
 
 const ProtectionSteps = () => {
   return (
-    <section className="my-30">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="Protection" />
-        <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">
+        <h1 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
           Take steps to protect yourself
         </h1>
-        <p className="text-xl text-center mt-6 max-w-[612px] mx-auto">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center mt-6 max-w-[612px] mx-auto">
           Enhance your security by familiarizing yourself with practices that
           help prevent unauthorized account activities, scams, and fraud
           attempts.

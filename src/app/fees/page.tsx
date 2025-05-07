@@ -8,24 +8,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "Is AssexMarkets free to use?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "Opening and maintaining an account with AssexMarkets is completely free. However, trading may incur spreads, swaps, and commissions depending on the account type.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "Does AssexMarkets charge deposit or withdrawal fees?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "AssexMarkets does not charge internal deposit fees. Some withdrawal methods may include a small processing fee, depending on your chosen provider.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "Are there any hidden fees?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "No. All our fees, including spreads, commissions, and swaps, are transparently displayed on our platform. We believe in full transparency.",
   },
   {
-    question: "What are stablecoins?",
+    question: "Are demo accounts completely free?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Yes, demo accounts are 100% free and provide access to real market conditions using virtual funds, perfect for practice and testing strategies.",
   },
 ];
 const Fee = () => {
@@ -51,7 +51,7 @@ const Fee = () => {
                 alt="Security"
                 width={600}
                 height={600}
-                // className="w-full h-auto object-contain max-h-[400px]"
+                className="w-full h-auto max-w-[300px] md:max-w-[500px] lg:max-w-[600px] mx-auto object-contain"
               />
             ),
           },
@@ -69,7 +69,7 @@ const Fee = () => {
                 alt="Goodbye"
                 width={320}
                 height={348}
-                // className="w-full h-auto object-contain max-h-[420px]"
+                className="w-full h-auto max-w-[280px] md:max-w-[320px] lg:max-w-[348px] mx-auto object-contain"
               />
             ),
           },
@@ -87,7 +87,7 @@ const Fee = () => {
                 alt="Wallet"
                 width={400}
                 height={267}
-                // className="w-full h-auto object-contain max-h-[380px]"
+                className="w-full h-auto max-w-[300px] md:max-w-[360px] lg:max-w-[400px] mx-auto object-contain"
               />
             ),
           },
@@ -129,8 +129,8 @@ const Fee = () => {
             alt="Tag"
             width={376}
             height={376}
-            className="object-contain mx-auto"
             priority
+            className="w-full h-auto max-w-[240px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[376px] object-contain mx-auto"
           />
         }
         rightText="Register in 5 minutes with just 3 easy steps"

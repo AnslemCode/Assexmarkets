@@ -5,10 +5,10 @@ import { TrendIcon } from "../../../public/icons/svgs";
 
 const WhatWeOffer = () => {
   return (
-    <section className="my-30">
-      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
+    <section className="section-padding">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
         <Badge text="Features" />
-        <h1 className="font-secondary font-bold text-[32px]  text-[#191A15] mt-6">
+        <h1 className="font-secondary font-bold text-sm sm:text-base md:text-xl text-[#191A15] mt-4">
           What We Offer
         </h1>
         <div className="mt-10 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center">

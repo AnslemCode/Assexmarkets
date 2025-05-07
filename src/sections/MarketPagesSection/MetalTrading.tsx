@@ -33,13 +33,13 @@ const steps = [
 
 const MetalTrading = () => {
   return (
-    <section className="my-30">
-      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
+    <section className="section-padding">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
         <Badge text="Metal Trading" />
-        <h1 className="font-secondary font-bold text-[32px] text-[#191A15] mt-6">
+        <h1 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
           How to start trading metal CFDs
         </h1>
-        <p className="sm:text-xl text-center mt-4 sm:mt-6 max-w-3xl mx-auto">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center mt-4 sm:mt-6 max-w-3xl mx-auto">
           Get exposure to global markets by trading the world’s leading metals —
           without owning the underlying assets. Follow this simple step-by-step
           process to begin trading metal CFDs with AssexMarkets.

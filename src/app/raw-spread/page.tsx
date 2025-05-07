@@ -8,24 +8,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What is the Raw Spread Account?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "The Raw Spread account offers direct market access with ultra-low spreads starting from 0.0 pips, ideal for scalpers and high-frequency traders.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What are the spreads like on this account?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Spreads can start from 0.0 pips, depending on market conditions, with a commission charged per trade.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "Is there a commission charged?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Yes, Raw Spread accounts charge a small commission per lot traded in exchange for tighter spreads.",
   },
   {
-    question: "What are stablecoins?",
+    question: "Who is the Raw Spread Account best suited for?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "This account is ideal for experienced traders, scalpers, and those using algorithmic trading systems seeking the tightest spreads.",
   },
 ];
 

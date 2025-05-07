@@ -32,11 +32,11 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
   imageElement,
 }) => {
   return (
-    <section className="bg-[rgba(0,204,177,0.02)] px-4 sm:px-6 lg:px-20 py-20 lg:py-24">
+    <section className="bg-[rgba(0,204,177,0.02)] px-6 sm:px-10 md:px-12 lg:px-20 pt-12 lg:pt-24">
       <div
-        className={`mx-auto flex flex-col-reverse lg:flex-row ${
-          reverse ? "lg:flex-row-reverse" : ""
-        } items-center justify-between lg:gap-12 max-w-7xl`}
+        className={`mx-auto flex flex-col gap-y-10 ${
+          reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } items-center justify-between lg:gap-x-12 max-w-7xl`}
       >
         {/* Left Content */}
         <motion.div
@@ -45,18 +45,18 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="w-full lg:max-w-[747px] text-center lg:text-left"
         >
-          <h2 className="text-[28px] sm:text-[32px] lg:text-[40px] font-secondary font-bold text-[#1F0d3f] leading-tight">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-secondary font-bold text-[#1F0d3f] leading-tight">
             {title}
           </h2>
 
           {description && (
-            <p className="text-base sm:text-lg leading-relaxed mt-6 max-w-[709px]">
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-6 max-w-[709px]">
               {description}
             </p>
           )}
 
           {bulletPoints && (
-            <ul className="max-w-[709px] list-disc list-inside text-lg mt-4 pl-5 space-y-2 text-[#3F4550]">
+            <ul className="max-w-[709px] list-disc list-inside text-sm sm:text-base md:text-lg mt-4 pl-5 space-y-2 text-[#3F4550]">
               {bulletPoints.map((point, index) => (
                 <li key={index} className="ml-1">
                   {point}
@@ -73,7 +73,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
                   icon={<WhiteFlameButtonIcon />}
                   text={button1Text}
                   variant="primary"
-                  size="lg"
+                  size="sm"
                   className="w-full sm:w-auto"
                   onClick={button1OnClick}
                 />
@@ -83,7 +83,7 @@ const MarketHeader: React.FC<MarketHeaderProps> = ({
                   icon={<VideoButtonIcon />}
                   text={button2Text}
                   variant="ghost"
-                  size="lg"
+                  size="sm"
                   className="w-full sm:w-auto"
                   onClick={button2OnClick}
                 />

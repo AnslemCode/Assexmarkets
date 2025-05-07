@@ -26,7 +26,7 @@ const MetalBenefits = () => {
           src="/images/goldmint.png"
           alt="Gold mint"
           width={400}
-          height={600}
+          height={400}
           style={{ maxHeight: "400px", width: "auto", height: "auto" }}
           priority
         />

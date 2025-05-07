@@ -37,10 +37,14 @@ const TradingPagesHeading: React.FC<TradingPagesHeadingProps> = ({
   };
 
   return (
-    <div className="mt-24 md:mt-32 px-4 text-center relative">
+    <div className="pt-12 lg:pt-24 pb-12 px-6 text-center relative">
       {/* Title */}
       <motion.h1
-        className="font-secondary text-[32px] md:text-4xl font-bold text-[#1f0e3f] leading-tight"
+        className="font-secondary font-bold text-[#1f0e3f] leading-tight mx-auto"
+        style={{
+          fontSize: "clamp(1.25rem, 4vw, 2rem)", // Responsive font size
+          maxWidth: "800px",
+        }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -50,7 +54,11 @@ const TradingPagesHeading: React.FC<TradingPagesHeadingProps> = ({
 
       {/* Subtitle */}
       <motion.p
-        className="mt-4 md:mt-6 text-base md:text-lg max-w-[709px] mx-auto text-[#3c3c3c] whitespace-pre-line"
+        className="mt-4 md:mt-6 text-[#3c3c3c] max-w-[709px] mx-auto whitespace-pre-line"
+        style={{
+          fontSize: "clamp(0.875rem, 2vw, 1.125rem)",
+          lineHeight: "1.75rem",
+        }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
@@ -60,7 +68,7 @@ const TradingPagesHeading: React.FC<TradingPagesHeadingProps> = ({
 
       {/* Bar Image */}
       <motion.div
-        className="relative w-[200px] md:w-[311px] h-[6px] md:h-[8px] mx-auto mt-4 md:mt-5"
+        className="relative w-[311px] h-[8px] mx-auto mt-4 md:mt-5"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.4, duration: 0.5 }}

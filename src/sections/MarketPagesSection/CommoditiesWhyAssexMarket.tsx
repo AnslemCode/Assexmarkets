@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const CommoditiesWhyAssexMarket = () => {
   return (
-    <section className="my-30">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -15,14 +15,15 @@ const CommoditiesWhyAssexMarket = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <Badge text="Why Assexmarkets?" />
+          <Badge text="Why?" />
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="font-secondary font-bold text-[32px] text-[#191A15] mt-6 text-center"
+          className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px]
+ text-[#191A15] mt-6 text-center"
         >
           Why trade commodities with Assexmarkets
         </motion.h2>
@@ -31,7 +32,7 @@ const CommoditiesWhyAssexMarket = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-base md:text-xl text-center mt-6 max-w-[880px] mx-auto text-[#3F4550]"
+          className="text-sm sm:text-base md:text-lg leading-relaxed text-center mt-6 max-w-[880px] mx-auto text-[#3F4550]"
         >
           You can trade all the big names in crypto on MT5. You’ll enjoy
           customisable layouts, trade-through charts, a range of plug-ins, an

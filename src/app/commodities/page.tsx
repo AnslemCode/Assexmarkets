@@ -8,24 +8,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What commodities can I trade on AssexMarkets?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "You can trade oil (WTI/Brent), natural gas, and agricultural commodities like wheat and corn through our CFDs.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What are the trading hours for commodities?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Commodity trading hours vary by asset but typically run 23 hours a day, five days a week. Platform schedules will provide exact times.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "What leverage is available for commodities trading?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Leverage varies by commodity and account type. AssexMarkets provides competitive leverage options, which can amplify both gains and losses.",
   },
   {
-    question: "What are stablecoins?",
+    question: "What spreads does AssexMarkets offer on commodities?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "We offer tight and competitive spreads on all major commodities. Raw Spread account holders enjoy some of the lowest available spreads.",
   },
 ];
 const CommoditiesPage = () => {

@@ -6,13 +6,13 @@ import BenefitCardV2 from "@/components/pageComponents/BenefitCardV2";
 
 const CryptoWhyAssexMarket = () => {
   return (
-    <section className="my-30">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center px-4 sm:px-6">
         <Badge text="Why Assexmarkets?" />
-        <h1 className="font-secondary font-bold text-[32px]  text-[#191A15] mt-6">
+        <h1 className="font-secondary font-bold ext-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
           Why trade crypto with Assexmarkets
         </h1>
-        <p className="text-base sm:text-xl text-center mt-4 sm:mt-6 max-w-3xl leading-relaxed">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center mt-4 sm:mt-6 max-w-3xl">
           You can trade all the big names in crypto on MT5. You’ll enjoy
           customisable layouts, trade-through charts, a range of plug-ins, an
           intuitive interface and more. Available on live and demo trade

@@ -25,7 +25,7 @@ const containerVariants = {
 const CopyTradingAccountTypes = () => {
   //   const router = useRouter();
   return (
-    <section className="mt-20">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -37,10 +37,10 @@ const CopyTradingAccountTypes = () => {
           custom={0}
         >
           <Badge text="Copy Trading Accounts" />
-          <h2 className="font-secondary text-[32px] font-bold text-[#1f0e3f]">
+          <h2 className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0e3f]">
             Built for Performance and Precision
           </h2>
-          <p className="text-xl leading-8">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             Elevate your trading with tailored account types that offer
             ultra-low spreads, high leverage, and professional-grade execution.
           </p>
@@ -121,7 +121,7 @@ const CopyTradingAccountTypes = () => {
           variants={containerVariants}
           custom={4}
         >
-          <p className="text-lg text-center leading-7">
+          <p className="text-sm md:text-lg text-center leading-7">
             Not ready to register yet? Try the free demo. Same features, same
             flexibility. It also includes full preview.
           </p>

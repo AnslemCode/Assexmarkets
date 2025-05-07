@@ -20,8 +20,8 @@ const fadeInUp = {
 
 const Benefits = () => {
   return (
-    <section className="mt-30">
-      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
+    <section className="section-padding">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -33,7 +33,7 @@ const Benefits = () => {
         </motion.div>
 
         <motion.h1
-          className="font-secondary font-bold text-[32px] text-[#191A15] mt-6 text-center"
+          className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -44,7 +44,7 @@ const Benefits = () => {
         </motion.h1>
 
         <motion.p
-          className="text-base sm:text-lg text-center mt-6 max-w-3xl mx-auto text-[#3F4550]"
+          className="text-sm sm:text-base text-center mt-6 max-w-3xl mx-auto text-[#3F4550]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -57,7 +57,7 @@ const Benefits = () => {
           the prizes, there&apos;s real value waiting for you.
         </motion.p>
 
-        <div className="mt-16 grid gap-10 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
+        <div className="mt-10 lg:mt-16 grid gap-10 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
           {[
             // card content mapped with animation
             {

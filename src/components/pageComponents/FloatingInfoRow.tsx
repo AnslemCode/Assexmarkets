@@ -57,16 +57,16 @@ const FloatingInfoRows: React.FC<FloatingInfoRowsProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              className={`flex flex-col md:flex-row items-center justify-between ${
+              className={`flex flex-col-reverse text-center md:text-left md:flex-row items-center justify-between ${
                 isEven ? "" : "md:flex-row-reverse"
               } gap-12 md:gap-20`}
             >
               {/* Text Block */}
               <div className="w-full md:w-1/2">
-                <h2 className="text-2xl sm:text-[32px] font-bold text-[#1f0d3f] leading-tight">
+                <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0d3f] leading-tight">
                   {row.title}
                 </h2>
-                <p className="mt-4 text-base sm:text-lg leading-relaxed">
+                <p className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed">
                   {row.text}
                 </p>
               </div>

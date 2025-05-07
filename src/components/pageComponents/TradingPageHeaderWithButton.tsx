@@ -49,23 +49,29 @@ export const TradingPageHeaderWithButton: React.FC<TradingPageHeaderProps> = ({
   };
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 mt-[100px] text-center relative">
+    <section className="pt-24 sm:pt-28 md:pt-32 pb-12 px-4 text-center relative">
       <motion.h1
-        className="font-secondary text-2xl sm:text-3xl font-bold text-[#1f0e3f] leading-tight flex flex-wrap justify-center gap-2"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
+        className="font-secondary font-bold text-[#1f0e3f] leading-tight mx-auto"
+        style={{
+          fontSize: "clamp(1.25rem, 4vw, 2rem)", // Responsive font size
+          maxWidth: "800px",
+        }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
       >
         {renderTitle()}
       </motion.h1>
 
       <motion.p
-        className="mt-6 max-w-3xl mx-auto text-base sm:text-lg whitespace-pre-line"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
+        className="mt-4 md:mt-6 text-[#3c3c3c] max-w-[709px] mx-auto whitespace-pre-line"
+        style={{
+          fontSize: "clamp(0.875rem, 2vw, 1.125rem)",
+          lineHeight: "1.75rem",
+        }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
       >
         {subtitle}
       </motion.p>

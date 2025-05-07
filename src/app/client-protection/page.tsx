@@ -9,24 +9,24 @@ import ProtectionSteps from "@/sections/TradingPagesSection/ProtectionSteps";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "How does AssexMarkets protect my personal information?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "We use industry-standard encryption, secure servers, and compliance with data protection laws to keep your personal information safe and confidential.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "Are my funds safe with AssexMarkets?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Yes, client funds are held in segregated accounts and protected through risk management protocols and partnerships with trusted financial institutions.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "Is two-factor authentication (2FA) available?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Yes, 2FA is available to add an extra layer of security to your account, helping prevent unauthorized access even if your password is compromised.",
   },
   {
-    question: "What are stablecoins?",
+    question: "What is your policy on phishing and online fraud?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "We actively monitor for fraudulent activity, educate users on phishing risks, and provide tools to report suspicious behavior. Always verify URLs and never share your login credentials.",
   },
 ];
 const ClientProtection = () => {
@@ -38,7 +38,7 @@ const ClientProtection = () => {
       />
       <FloatingInfoRows
         floatingText="We've got you covered"
-        floatingTextSizeClass="text-[32px]"
+        floatingTextSizeClass="text-xl md:text-[32px]"
         rows={[
           {
             title: "Regulations",
@@ -49,7 +49,8 @@ const ClientProtection = () => {
                 alt="Security"
                 width={500}
                 height={333}
-                // className="w-full h-auto object-contain max-h-[400px]"
+                priority
+                className="w-full h-auto max-w-[500px] object-contain mx-auto"
               />
             ),
           },
@@ -67,7 +68,8 @@ const ClientProtection = () => {
                 alt="Goodbye"
                 width={280}
                 height={354}
-                // className="w-full h-auto object-contain max-h-[420px]"
+                priority
+                className="w-full h-auto max-w-[320px] object-contain mx-auto"
               />
             ),
           },

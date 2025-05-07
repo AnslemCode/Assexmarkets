@@ -54,10 +54,13 @@ export const DualBulletPointSection: React.FC<DualBulletPointSectionProps> = ({
       viewport={{ once: true, amount: 0.2 }}
       variants={animationVariants}
     >
-      <h2 className="font-secondary text-2xl md:text-[32px] font-bold text-[#0dae94]">
+      <h2
+        className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
+ font-bold text-[#0dae94] text-center md:text-left"
+      >
         {section.sectionTitle}
       </h2>
-      <p className="mt-4 text-base md:text-lg leading-7">
+      <p className="mt-4 text-sm sm:text-base md:text-lg text-center md:text-left leading-relaxed">
         {section.sectionText}
       </p>
 
@@ -74,10 +77,10 @@ export const DualBulletPointSection: React.FC<DualBulletPointSectionProps> = ({
                   <TickIcon />
                 </div>
                 <div>
-                  <div className="text-lg md:text-[22px] text-[#1f0d3f] font-semibold">
+                  <div className="text-base sm:text-xl md:text-2xl text-[#1f0d3f] font-semibold">
                     {point.title}
                   </div>
-                  <p className="text-base md:text-lg mt-4 leading-7">
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-4">
                     {point.description}
                   </p>
                 </div>
@@ -90,11 +93,11 @@ export const DualBulletPointSection: React.FC<DualBulletPointSectionProps> = ({
   );
 
   return (
-    <section className="mt-20 px-4 md:px-0">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto">
         {generalTitle && (
           <motion.h1
-            className="font-secondary text-[32px] font-bold text-center text-[#0dae94]"
+            className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-center text-[#0dae94]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -105,7 +108,7 @@ export const DualBulletPointSection: React.FC<DualBulletPointSectionProps> = ({
         )}
         {generalDescription && (
           <motion.p
-            className="text-base md:text-lg text-center max-w-4xl mx-auto mt-4"
+            className="text-sm sm:text-base md:text-lg leading-relaxed text-center max-w-4xl mx-auto mt-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -115,7 +118,7 @@ export const DualBulletPointSection: React.FC<DualBulletPointSectionProps> = ({
           </motion.p>
         )}
 
-        <div className="mt-16 flex flex-col md:flex-row justify-between items-start gap-12 md:gap-[14px]">
+        <div className="mt-10 md:mt-16 flex flex-col md:flex-row justify-between items-start gap-12 md:gap-[14px]">
           <div className="flex flex-col gap-12 w-full md:w-[592px]">
             {leftSections.map((section, i) => renderSection(section, i, i))}
           </div>

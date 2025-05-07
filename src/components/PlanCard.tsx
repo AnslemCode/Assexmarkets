@@ -24,7 +24,7 @@ export const PlanCard: React.FC<PlanCardProps> = ({
   return (
     <div
       className={clsx(
-        "relative max-w-[352px] min-h-[700px] rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ease-in-out",
+        "relative max-w-[352px] min-h-[700px] rounded-2xl p-8 flex flex-col transition-all duration-300 ease-in-out",
         "bg-white shadow-lg hover:bg-[#F3FFFD] hover:shadow-xl hover:border-[#00CCB1] hover:border-2",
         isPro &&
           "border-2 border-[#00CCB1] shadow-[0_0_60px_0_rgba(0,204,177,0.3)]"
@@ -45,9 +45,11 @@ export const PlanCard: React.FC<PlanCardProps> = ({
       <div
         className={clsx("flex flex-col", isPro ? "mt-12 gap-3" : "mt-16 gap-6")}
       >
-        <p className="text-lg text-[#3F4550]">{description}</p>
+        <p className="text-base md:text-lg text-[#3F4550] leading-relaxed">
+          {description}
+        </p>
 
-        <div className="pt-6 flex justify-center">
+        <div className="pt-3 flex justify-center">
           {customButton ?? (
             <Button
               variant="primary"
@@ -60,11 +62,11 @@ export const PlanCard: React.FC<PlanCardProps> = ({
         </div>
       </div>
 
-      <ul className="space-y-3 mt-6">
+      <ul className="space-y-3 mt-12">
         {benefits.map((benefit, idx) => (
           <li
             key={idx}
-            className="flex items-start gap-3 text-lg text-[#3F4550] leading-snug"
+            className="flex items-start gap-3 text-base md:text-lg text-[#3F4550] leading-snug"
           >
             <span className="flex-shrink-0 mt-[2px]">
               <CheckCircle />

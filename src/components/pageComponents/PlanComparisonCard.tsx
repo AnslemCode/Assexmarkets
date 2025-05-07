@@ -58,11 +58,11 @@ const PlanComparisonCard: React.FC<PlanComparisonCardProps> = ({
         }`}
       >
         <div></div>
-        <div className="font-bold text-xl md:text-2xl text-[#1f0d3f]">
+        <div className="font-bold text-sm md:text-base  text-[#1f0d3f]">
           {planNames[0]}
         </div>
         {!isSinglePlan && (
-          <div className="font-bold text-xl md:text-2xl text-[#1f0d3f]">
+          <div className="font-bold text-sm md:text-base  text-[#1f0d3f]">
             {planNames[1]}
           </div>
         )}

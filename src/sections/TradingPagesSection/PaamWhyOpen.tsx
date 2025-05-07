@@ -16,8 +16,8 @@ const fadeInUp = {
 
 const PaamWhyOpen = () => {
   return (
-    <section className="mt-30">
-      <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
+    <section className="section-padding">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -29,7 +29,7 @@ const PaamWhyOpen = () => {
         </motion.div>
 
         <motion.h1
-          className="font-secondary font-bold text-[32px] text-[#191A15] mt-6 text-center"
+          className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

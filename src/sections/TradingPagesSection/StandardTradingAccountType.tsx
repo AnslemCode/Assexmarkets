@@ -24,11 +24,11 @@ const StandardTradingAccountTypes = () => {
   // const router = useRouter();
 
   return (
-    <section className="mt-50">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
-          className="flex flex-col items-center text-center gap-6 px-4"
+          className="flex flex-col items-center text-center gap-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -36,10 +36,13 @@ const StandardTradingAccountTypes = () => {
           custom={0}
         >
           <Badge text="Standard Trading Accounts" />
-          <h2 className="font-secondary text-[32px] font-bold text-[#1f0e3f]">
+          <h2
+            className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
+ font-bold text-[#1f0e3f]"
+          >
             Reliable Trading for Every Trader
           </h2>
-          <p className="text-lg leading-8">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             Experience flexibility and simplicity with our Standard account
             types— designed for both beginners and seasoned traders.
           </p>
@@ -99,11 +102,11 @@ const StandardTradingAccountTypes = () => {
           variants={containerVariants}
           custom={3}
         >
-          <p className="text-lg text-center leading-7">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center">
             Want to explore before committing? Try our free demo with full
             features and flexibility.
           </p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-4 md:mt-10 flex justify-center">
             <CustomButton
               // onClick={() => router.push("/simulated-account-trading")}
               className="flex items-center gap-2 bg-[white] text-[#2D3139] rounded-[48px] font-medium border border-[#2D3139]/40"

@@ -26,7 +26,7 @@ const CopyTradingTypes = () => {
             alt="Follower"
             width={702}
             height={560}
-            className="max-w-full h-auto"
+            className="w-full object-cover rounded-none"
           />
         }
       />
@@ -43,7 +43,7 @@ const CopyTradingTypes = () => {
             alt="Strategy Provider"
             width={610}
             height={560}
-            className="max-w-full h-auto"
+            className="w-full object-cover rounded-none"
           />
         }
       />

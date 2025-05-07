@@ -23,7 +23,7 @@ const containerVariants = {
 const AccountTypes = () => {
   // const router = useRouter();
   return (
-    <section className="mt-36 px-4">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -35,10 +35,10 @@ const AccountTypes = () => {
           custom={0}
         >
           <Badge text="Account Types" />
-          <h2 className="font-secondary text-[32px] font-bold text-[#1f0e3f]">
+          <h2 className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0e3f]">
             Simple and Trustworthy
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed sm:leading-8">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed sm:leading-8">
             Choose the Right Account for Your Trading Style.
             <br /> From beginner-friendly options to pro-level execution, we
             offer accounts tailored to every level of trader.

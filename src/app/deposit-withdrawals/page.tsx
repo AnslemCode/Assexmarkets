@@ -8,24 +8,24 @@ import Image from "next/image";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What are instant deposits and withdrawals?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "Instant deposits and withdrawals allow you to fund or withdraw from your trading account within minutes using supported payment methods, ensuring fast and seamless access to your capital.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What payment methods are supported?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "AssexMarkets supports various payment methods including bank transfers, credit/debit cards, e-wallets, and local payment providers for convenience and global accessibility.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "Are there any fees for deposits or withdrawals?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Most deposits are free of charge, but some withdrawal methods may include minimal processing fees depending on your payment provider. Check our funding page for detailed breakdowns.",
   },
   {
-    question: "What are stablecoins?",
+    question: "Can I withdraw money from a Demo account?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "No, demo accounts are for practice only and use virtual funds. You can’t deposit or withdraw real money from them.",
   },
 ];
 const DepositWithdrawalsPage = () => {

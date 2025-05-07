@@ -45,13 +45,13 @@ const container = {
 
 const HowItWorks = () => {
   return (
-    <section className="my-30">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
         <Badge text="Trading Contest" />
-        <h1 className="font-secondary font-bold text-[32px] text-[#191A15] mt-6 text-center">
+        <h1 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6 text-center">
           How it works
         </h1>
-        <p className="text-base sm:text-lg text-center mt-6 max-w-[879px] mx-auto">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center mt-6 max-w-[879px] mx-auto">
           Trading Forex CFDs (Contracts for Difference) lets you speculate on
           the price movements of currency pairs without owning the underlying
           assets. At AssexMarkets, we make it simple, fast, and secure to get
@@ -115,7 +115,7 @@ export default HowItWorks;
 
 // const HowItWorks = () => {
 //   return (
-//     <section className="my-30">
+//     <section className="section-padding">
 //       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6">
 //         <Badge text="Trading Contest" />
 //         <h1 className="font-secondary font-bold text-[40px] text-[#191A15] mt-6">

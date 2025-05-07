@@ -25,10 +25,10 @@ const TradingCalculatorResultComponent: React.FC<
     <section className="mt-20">
       <div className="max-w-6xl mx-auto text-center">
         <Badge text={badgeText} />
-        <h2 className="font-secondary font-bold text-2xl sm:text-[32px] text-[#191A15] mt-6">
+        <h2 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
           {title}
         </h2>
-        <p className="text-base sm:text-lg mt-4 leading-relaxed text-[#4B5563] max-w-3xl mx-auto whitespace-pre-line">
+        <p className="text-sm sm:text-base md:text-lg mt-4 leading-relaxed text-[#4B5563] max-w-3xl mx-auto whitespace-pre-line">
           {description}
         </p>
 

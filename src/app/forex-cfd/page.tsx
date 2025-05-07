@@ -10,24 +10,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "How do I get started with forex trading?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "Create an account with AssexMarkets, complete verification, fund your account, and access the platform to start trading major, minor, and exotic currency pairs.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What are the most traded forex pairs?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "The most popular forex pairs include EUR/USD, GBP/USD, USD/JPY, and USD/CHF, known for high liquidity and tight spreads.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "How much do I need to start trading forex?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "You can start trading forex with as little as $10 depending on the account type. However, we recommend starting with an amount you’re comfortable managing.",
   },
   {
-    question: "What are stablecoins?",
+    question: "When can I start trading forex?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Forex trading is available 24 hours a day, five days a week—from Sunday evening to Friday night—giving you flexible access to the markets.",
   },
 ];
 const ForexCFDPage = () => {

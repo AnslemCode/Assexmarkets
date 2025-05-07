@@ -9,24 +9,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "Is index trading volatile?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "Yes, index trading can be volatile, especially during economic events, but it generally offers diversified exposure and can reduce individual stock risk.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "How does CFD trading on indices work?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "CFD trading lets you speculate on the price movement of stock indices without owning the underlying assets, using leverage for potential gains or losses.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "What are some popular indices available on AssexMarkets?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Popular indices include the S&P 500, NASDAQ 100, FTSE 100, DAX 30, and Nikkei 225, all available for trading as CFDs.",
   },
   {
-    question: "What are stablecoins?",
+    question: "Is leverage available for indices?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Yes, AssexMarkets offers competitive leverage for index CFDs. Leverage varies by instrument and region, so check platform details.",
   },
 ];
 

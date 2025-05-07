@@ -25,13 +25,13 @@ const boxVariants = {
 
 const WhyChooseUs = () => {
   return (
-    <section className="my-30">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-6 text-center">
         <Badge text="Why Choose Us" />
-        <h1 className="font-secondary font-bold text-[32px] text-[#191A15] mt-6">
+        <h1 className="font-secondary font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] text-[#191A15] mt-6">
           Smooth trading journey from sign-up to success
         </h1>
-        <p className="text-lg sm:text-xl mt-6 max-w-3xl">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed mt-6 max-w-3xl">
           Benefit from our unrivaled payments ecosystem: seamless deposits via
           global and local payment systems, 24/7 access and hassle-free release
           of funds.

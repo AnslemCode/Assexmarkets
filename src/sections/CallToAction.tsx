@@ -30,7 +30,7 @@ const fadeInUp = {
 const CallToAction = () => {
   const router = useRouter();
   return (
-    <section className="mt-30 bg-[#1DA1F2]/5 py-12 px-4 sm:px-8 md:py-20">
+    <section className="section-padding bg-[#1DA1F2]/5 py-12">
       <motion.div
         variants={container}
         initial="hidden"
@@ -40,12 +40,15 @@ const CallToAction = () => {
       >
         <motion.h2
           variants={fadeInUp}
-          className="text-2xl md:text-[32px] font-bold font-secondary text-[#1f0e3f]"
+          className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold font-secondary text-[#1f0e3f]"
         >
           Join over 100k+ users to trade with a trusted broker today
         </motion.h2>
 
-        <motion.p variants={fadeInUp} className="text-lg mt-4">
+        <motion.p
+          variants={fadeInUp}
+          className="text-sm sm:text-base md:text-lg leading-relaxed mt-4"
+        >
           Trade confidently and securely with AssexMarkets today.
         </motion.p>
 
@@ -57,14 +60,14 @@ const CallToAction = () => {
             text="Create a Live Account"
             icon={<WhiteFlameButtonIcon />}
             variant="primary"
-            size="lg"
+            size="sm"
           />
           <Button
             onClick={() => router.push("/simulated-account-trading")}
             text="Try a free Demo"
             icon={<VideoButtonIcon />}
             variant="ghost"
-            size="lg"
+            size="sm"
           />
         </motion.div>
       </motion.div>

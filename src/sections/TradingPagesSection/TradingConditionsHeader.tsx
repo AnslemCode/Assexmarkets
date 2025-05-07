@@ -40,14 +40,14 @@ const TradingHeaderSection: React.FC<TradingHeaderSectionProps> = ({
   text,
 }) => {
   return (
-    <section className="relative w-full h-auto md:h-[432px] bg-[#00CCB1]/[0.02] rounded-[30px] overflow-hidden">
+    <section className="relative w-full h-auto md:h-[432px] bg-[#00CCB1]/[0.02] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/bgImage.png"
           alt="Background"
           fill
-          className="object-cover pointer-events-none"
+          className="object-cover object-left lg:object-center pointer-events-none"
         />
         <div className="absolute inset-0 bg-[#00CCB1]/[0.02]" />
       </div>
@@ -58,17 +58,17 @@ const TradingHeaderSection: React.FC<TradingHeaderSectionProps> = ({
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-24 text-center flex flex-col items-center"
+        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-18 md:py-24 text-center flex flex-col items-center"
       >
         <motion.h1
           variants={itemVariants}
-          className="font-secondary text-[32px]  font-bold text-[#1F0d3F] leading-tight"
+          className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1F0d3F] leading-tight"
         >
           {title}
         </motion.h1>
         <motion.p
           variants={itemVariants}
-          className="text-base sm:text-lg md:text-xl max-w-[709px] mt-4 md:mt-6 text-[#1F0d3F]"
+          className="text-sm sm:text-base md:text-lg leading-relaxed max-w-xs lg:max-w-3xl mt-4 md:mt-6"
         >
           {text}
         </motion.p>

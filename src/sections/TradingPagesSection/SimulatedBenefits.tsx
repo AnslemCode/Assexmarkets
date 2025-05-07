@@ -20,11 +20,11 @@ const ReusableBenefitsSection = ({
   rightContent,
 }: ReusableBenefitsProps) => {
   return (
-    <section className="mt-20 px-4">
-      <div className="max-w-7xl mx-auto bg-[#1DA1F2]/10 rounded-[40px] px-6 sm:px-10 md:px-[50px] pt-[40px] md:pt-[55px] pb-[30px] md:pb-[45px]">
+    <section className="mt-20 lg:mt-30 md:px-10">
+      <div className="max-w-7xl mx-auto bg-[#1DA1F2]/2 lg:rounded-[40px] px-6 sm:px-10 md:px-[50px] pt-[40px] md:pt-[55px] pb-[30px] md:pb-[45px]">
         {/* Title */}
         <motion.h1
-          className="text-[#1F0d3F] text-center font-bold text-2xl sm:text-[32px] max-w-3xl mx-auto leading-snug sm:leading-relaxed"
+          className="font-secondary text-[#1F0d3F] text-center font-bold text-base sm:text-xl md:text-2xl lg:text-[32px] max-w-2xs lg:max-w-3xl mx-auto leading-snug sm:leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -34,9 +34,9 @@ const ReusableBenefitsSection = ({
         </motion.h1>
 
         {/* Content Grid */}
-        <div className="mt-10 md:mt-[50px] flex flex-col-reverse lg:flex-row gap-10 lg:gap-[80px] items-start">
+        <div className="mt-10 md:mt-[50px] flex flex-col lg:flex-row gap-10 lg:gap-[80px] items-start">
           {/* Left - Benefits List */}
-          <div className="flex flex-col gap-8 w-full max-w-[500px] mx-auto lg:mx-0">
+          <div className="flex flex-col gap-12 lg:gap-8 w-full max-w-[500px] mx-auto lg:mx-0">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
@@ -50,7 +50,7 @@ const ReusableBenefitsSection = ({
                   {benefit.icon}
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-[#1F0d3F]">
+                  <h3 className="font-bold text-base lg:text-lg text-[#1F0d3F]">
                     {benefit.title}
                   </h3>
                   <p className="mt-1 text-sm text-[#3c3c3c] leading-relaxed">

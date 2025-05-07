@@ -11,24 +11,25 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is cryptocurrency?",
+    question: "What are the benefits of becoming a Strategy Provider?",
     answer:
-      "Cryptocurrency is a form of digital or virtual currency that uses cryptography for security and operates independently of a central bank.",
+      "As a Strategy Provider, you earn performance fees from followers, build credibility in the trading community, and expand your reach by showcasing successful strategies to a wider audience.",
   },
   {
-    question: "How do I buy crypto?",
+    question: "How can I showcase my trading strategy effectively?",
     answer:
-      "You can buy cryptocurrencies through exchanges like Coinbase, Binance, or Kraken using your debit/credit card or bank transfer.",
+      "Maintain a transparent performance history, highlight your risk management techniques, and provide consistent updates to attract and retain followers.",
   },
   {
-    question: "What is a crypto wallet?",
+    question:
+      "What are the steps to start offering my trading strategy to others?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "Register as a Strategy Provider, set up your trading account, verify your performance metrics, and publish your strategy for others to follow.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "How do I set up a performance fee structure for my strategy?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "You can configure your performance fee during the strategy creation process, choosing a percentage that reflects the value of your strategy while remaining competitive.",
   },
 ];
 

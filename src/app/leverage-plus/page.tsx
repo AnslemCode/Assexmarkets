@@ -8,24 +8,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What is the Leverage Plus Account?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "The Leverage Plus account offers higher leverage options, allowing traders to control larger positions with less capital.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "What is the minimum lot size I can trade?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "You can trade micro-lots (0.01 lots) on the Leverage Plus account, ideal for managing risk while benefiting from leverage.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "How many open trades can I have at once?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "You can open multiple trades simultaneously, subject to margin availability and risk limits set by the platform.",
   },
   {
-    question: "What are stablecoins?",
+    question: "Is high leverage risky?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Yes, while high leverage can amplify profits, it also increases the risk of losses. Use risk management and trade responsibly.",
   },
 ];
 

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { CustomButton } from "@/components/ui/moving-border";
+// import { CustomButton } from "@/components/ui/moving-border";
 import Image from "next/image";
 import React from "react";
 
@@ -42,7 +42,7 @@ const fadeUp = {
 
 export function StepsSection() {
   return (
-    <section className="mt-20 px-4 sm:px-6">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -53,7 +53,7 @@ export function StepsSection() {
           className="flex flex-col lg:flex-row justify-between items-center gap-8"
         >
           <div className="flex-1 space-y-4">
-            <h2 className="text-[32px] font-bold text-[#1f0e3f] font-secondary">
+            <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0e3f] font-secondary text-center md:text-left">
               Register in 5 minutes with these 3 easy steps
             </h2>
             <p className="text-base sm:text-lg text-[#3F4550]">
@@ -61,9 +61,12 @@ export function StepsSection() {
               straightforward steps and you’re all set!
             </p>
           </div>
-          <CustomButton className="bg-[#1f0e3f] text-white px-6 py-3 text-sm sm:text-base rounded-full font-medium whitespace-nowrap">
-            Get Started
-          </CustomButton>
+          {/* Desktop Button */}
+          <div className="hidden lg:block">
+            <button className="bg-[#1f0e3f] text-white px-6 py-3 text-sm sm:text-base rounded-full font-medium whitespace-nowrap shadow-[0_0_20px_rgba(31,14,63,0.6)] transition duration-300 hover:shadow-[0_0_35px_rgba(31,14,63,0.9)] hover:scale-105">
+              Get Started
+            </button>
+          </div>
         </motion.div>
 
         {/* Steps Grid */}
@@ -93,6 +96,12 @@ export function StepsSection() {
               <p className="text-sm text-[#3F4550]">{step.description}</p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-10 lg:hidden flex justify-center">
+          <button className="w-[288px] bg-[#1f0e3f] text-white px-6 py-3 text-sm sm:text-base rounded-full font-medium whitespace-nowrap shadow-[0_0_20px_rgba(31,14,63,0.6)] transition duration-300 hover:shadow-[0_0_35px_rgba(31,14,63,0.9)] hover:scale-105">
+            Get Started
+          </button>
         </div>
       </div>
     </section>

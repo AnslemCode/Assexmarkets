@@ -26,9 +26,9 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
   imageOnLeft = false,
 }) => {
   return (
-    <section className="px-4 py-16 sm:px-6 lg:px-8 bg-white">
+    <section className="section-padding">
       <div
-        className={`max-w-7xl mx-auto flex flex-col-reverse items-center gap-12 md:gap-20 lg:flex-row ${
+        className={`max-w-7xl mx-auto flex flex-col items-center gap-8 md:gap-20 lg:flex-row ${
           imageOnLeft ? "lg:flex-row-reverse" : ""
         }`}
       >
@@ -43,25 +43,27 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="text-[28px] md:text-[32px] font-bold text-[#1f0d3f] mb-4 leading-tight">
+          <h2 className="text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#1f0d3f] mb-4 whitespace-pre-line leading-loose">
             {title}
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed">{description}</p>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed ">
+            {description}
+          </p>
           <div className="mt-8">
             <Button
               onClick={buttonOnClick}
               text={buttonText}
               icon={<WhiteFlameButtonIcon />}
               variant="primary"
-              size="lg"
+              size="md"
             />
           </div>
         </motion.div>
 
         {/* Image Section */}
         <motion.div
-          className={`w-full lg:w-1/2 flex ${
-            imageOnLeft ? "justify-start" : "justify-end"
+          className={`w-full lg:w-1/2 flex justify-center lg:justify-${
+            imageOnLeft ? "start" : "end"
           }`}
           variants={fadeInUp}
           initial="hidden"
@@ -69,7 +71,13 @@ const ImageWithTextSection: React.FC<ImageWithTextSectionProps> = ({
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          {imageComponent}
+          <div
+            className={`w-full flex justify-center lg:justify-${
+              imageOnLeft ? "start" : "end"
+            } overflow-hidden rounded-none lg:rounded-xl`}
+          >
+            {imageComponent}
+          </div>
         </motion.div>
       </div>
     </section>

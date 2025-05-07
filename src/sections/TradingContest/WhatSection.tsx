@@ -9,23 +9,24 @@ const fadeInUp = {
 
 const WhatSection = () => {
   return (
-    <section className="mt-20">
+    <section className="section-padding">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 px-4 sm:px-6">
         {/* Left: Image */}
         <motion.div
-          className="w-full lg:w-auto flex justify-center overflow-hidden h-[500px] sm:h-[660px]"
+          className="w-full lg:w-auto flex justify-center overflow-hidden"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div className="relative w-[320px] sm:w-[480px] md:w-[540px] lg:w-[600px] h-[600px] sm:h-[800px] lg:h-[900px] -translate-y-[100px] sm:-translate-y-[180px] lg:-translate-y-[322px]">
+          <div className="">
             <Image
               src="/images/yellow-man.png"
               alt="What is the Trading Contest"
-              fill
-              className="rounded-xl object-cover"
+              width={702}
+              height={533}
+              className="rounded-xl w-[320px] sm:w-[480px] md:w-[540px] lg:w-[600px] h-auto"
               priority
             />
           </div>
@@ -40,10 +41,13 @@ const WhatSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          <h2 className="font-secondary text-[32px] font-bold text-[#0dae94] leading-tight">
+          <h2
+            className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
+ font-bold text-[#0dae94] leading-tight text-center lg:text-left"
+          >
             What is the Trading Contest?
           </h2>
-          <p className="mt-4 text-base sm:text-lg leading-relaxed whitespace-pre-line">
+          <p className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed whitespace-pre-line">
             The Trading Contest is a time-bound, high-energy competition where
             traders go head-to-head on a live leaderboard by executing real
             trades in the market. It’s more than just a challenge — it’s an

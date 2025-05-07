@@ -8,7 +8,8 @@ const SupportedPaymentsSection = () => {
       <div className="max-w-7xl mx-auto text-center text-[#1F0D3F]">
         {/* Title */}
         <motion.h2
-          className="font-secondary text-2xl sm:text-[32px] font-bold"
+          className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px]
+ font-bold"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -19,7 +20,7 @@ const SupportedPaymentsSection = () => {
 
         {/* Description */}
         <motion.p
-          className="mt-4 text-base sm:text-lg mx-auto lg:mx-0"
+          className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed mx-auto lg:mx-0"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}

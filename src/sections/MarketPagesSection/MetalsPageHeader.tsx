@@ -12,11 +12,12 @@ const MetalsPageHeader = () => (
     button1Text="Create a Live Account"
     button2Text="Try a Free Demo"
     imageElement={
-      <div className="relative w-full max-w-[400px] aspect-[2/3]">
+      <div className="relative w-full max-w-[400px]">
         <Image
           src="/images/goldmint.png"
           alt="Gold mint"
-          fill
+          height={400}
+          width={400}
           className="object-contain rounded-xl"
           priority
         />

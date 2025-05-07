@@ -8,24 +8,24 @@ import React from "react";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What is a PAAM account?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "A PAAM account allows investors to allocate funds to a professional trader who manages trades on their behalf, with profits and losses distributed proportionally.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "Who can become a fund manager?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Experienced traders with a consistent track record and verified credentials can apply to become fund managers on the PAAM platform.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "How are profits and losses shared?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Profits and losses are shared among investors based on the percentage of funds they contribute to the PAAM account.",
   },
   {
-    question: "What are stablecoins?",
+    question: "Can I invest in more than one manager?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Yes, you can diversify your investments by allocating funds to multiple fund managers, each with different trading styles.",
   },
 ];
 // Percentage Allocation Asset Management (PAMM)

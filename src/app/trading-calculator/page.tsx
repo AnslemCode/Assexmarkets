@@ -3,27 +3,28 @@ import TradingCalculatorForm from "@/sections/TradingPagesSection/TradingCalcula
 import TradingCalculatorHeader from "@/sections/TradingPagesSection/TradingCalculatorHeader";
 import TradingCalculatorResults from "@/sections/TradingPagesSection/TradingCalculatorResults";
 import TradingCalculatorSteps from "@/sections/TradingPagesSection/TradingCalculatorSteps";
+import TradingPageCTA from "@/sections/TradingPagesSection/TradingPageCTA";
 
 const myFaqs: FAQItem[] = [
   {
-    question: "What is a crypto wallet?",
+    question: "What is the Trading Calculator?",
     answer:
-      "A crypto wallet is a secure digital wallet used to store, send, and receive cryptocurrencies. There are hot wallets (online) and cold wallets (offline).",
+      "The Trading Calculator helps you estimate trade metrics like margin, pip value, and potential profit/loss before placing a trade.",
   },
   {
-    question: "Is crypto trading safe?",
+    question: "How does the Trading Calculator work?",
     answer:
-      "Crypto trading involves risk due to market volatility. Use trusted platforms, enable two-factor authentication, and never invest more than you can afford to lose.",
+      "Enter values such as instrument, volume, leverage, and account currency to calculate results instantly using real-time data.",
   },
   {
-    question: "How can I earn from holding coins?",
+    question: "Is the Trading Calculator free to use?",
     answer:
-      "You can earn passive income through staking, yield farming, or earning interest by lending your crypto on certain platforms.",
+      "Yes, our Trading Calculator is completely free and available to all users on the AssexMarkets website.",
   },
   {
-    question: "What are stablecoins?",
+    question: "Can I use the Trading Calculator for all instruments?",
     answer:
-      "Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar to reduce volatility. Examples include USDT, USDC, and DAI.",
+      "Yes, it supports all major instruments available on the platform including forex, commodities, indices, and metals.",
   },
 ];
 const TradingCalculator = () => {
@@ -34,6 +35,7 @@ const TradingCalculator = () => {
       <TradingCalculatorResults />
       <TradingCalculatorSteps />
       <FAQs faqItems={myFaqs} />
+      <TradingPageCTA />
     </>
   );
 };

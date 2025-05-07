@@ -3,13 +3,13 @@ import Badge from "@/components/Badge";
 
 const ContactInfo = () => {
   return (
-    <section className="bg-stone-100 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto py-20">
+    <section className="section-padding bg-stone-100">
+      <div className="max-w-7xl mx-auto py-10 md:py-20">
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-20">
           {/* Left Column */}
-          <div className="space-y-6 max-w-[530px] text-center lg:text-left mx-auto lg:mx-0">
+          <div className="space-y-4 lg:space-y-6 max-w-[530px] text-center lg:text-left mx-auto lg:mx-0">
             <Badge text="Contact Info" />
-            <p className="font-secondary text-2xl lg:text-[32px] font-bold text-[#0dae94] leading-snug">
+            <p className="font-secondary text-base sm:text-xl md:text-2xl lg:text-[32px] font-bold text-[#0dae94] leading-snug">
               We are always happy to assist you
             </p>
           </div>
@@ -50,12 +50,16 @@ type ContactBlockProps = {
 };
 
 const ContactBlock = ({ title, contact, note, isEmail }: ContactBlockProps) => (
-  <div className="space-y-4 text-center sm:text-left text-[#1f0d3f] max-w-xs">
-    <h3 className="text-lg sm:text-xl font-semibold">{title}</h3>
-    <div className="h-[3px] w-7 bg-[#1f0d3f] mx-auto sm:mx-0" />
-    <p className={`text-base sm:text-lg ${isEmail ? "underline" : ""}`}>
+  <div className="space-y-4 text-left text-[#1f0d3f] max-w-xs">
+    <h3 className="text-sm sm:text-base md:text-lg font-semibold">{title}</h3>
+    <div className="h-[3px] w-7 bg-[#1f0d3f] mx-0" />
+    <p
+      className={`text-sm sm:text-base md:text-lg ${
+        isEmail ? "underline" : ""
+      }`}
+    >
       {contact}
     </p>
-    <p className="text-sm sm:text-base text-gray-600">{note}</p>
+    <p className="text-xs sm:text-sm">{note}</p>
   </div>
 );

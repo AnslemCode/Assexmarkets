@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import {
@@ -19,31 +20,12 @@ const Hero = () => {
   return (
     <section
       key={pathname}
-      className="relative min-h-screen text-white overflow-hidden flex flex-col justify-start pt-[100px] md:pt-[160px] lg:pt-[180px] bg-white"
+      className="relative min-h-fit bg-[#00CCB1]/3 text-[#1f0e3f] overflow-hidden flex flex-col justify-start pt-[100px] md:pt-[160px] lg:pt-[180px]"
     >
-      {/* text-[#1f0e3f] */}
-      {/* Background Video */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="w-full h-full object-cover pointer-events-none select-none brightness-[1.3]"
-        >
-          <source src="/videos/hero.webm" type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      {/* White overlay above the video */}
-      {/* <div className="absolute inset-0 z-[1] bg-white/80" /> */}
-
-      {/* Optional overlays */}
       <ShootingStars />
       <StarsBackground />
 
-      {/* Foreground Content */}
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
@@ -65,12 +47,12 @@ const Hero = () => {
           <span className="text-[#0dae94]">Tight Spread</span>
         </motion.h1>
 
-        {/* CTA Buttons */}
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6"
+          className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6 z-20"
         >
           <Button
             variant="primary"
@@ -85,6 +67,17 @@ const Hero = () => {
             size="sm"
           />
         </motion.div>
+      </div>
+
+      {/* Hero Image */}
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[661px] -mt-12 z-0">
+        <Image
+          src="/images/herobgImage.png"
+          alt="Hero background"
+          fill
+          className="object-cover pointer-events-none select-none"
+          priority
+        />
       </div>
     </section>
   );

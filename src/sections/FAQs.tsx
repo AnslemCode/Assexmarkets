@@ -18,7 +18,7 @@ const FAQs = ({ faqItems }: FAQsProps) => {
   const [selectedFaq, setSelectedFaq] = useState(0);
 
   return (
-    <section className="section-padding">
+    <section className="section-padding pb-20 lg:pb-28">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row gap-12 items-center">
         {/* Left: Heading */}
         <div className="md:w-1/2">
